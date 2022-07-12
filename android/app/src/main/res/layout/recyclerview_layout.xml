@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/ultimate_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewClipToPadding="true"
+        android:layout_marginTop="0dp"
+        app:recyclerviewDefaultSwipeColor="@array/google_colors"
+        app:recyclerviewEmptyView="@layout/view_empty"
+        app:recyclerviewScrollbars="vertical"/>
+
+</LinearLayout>

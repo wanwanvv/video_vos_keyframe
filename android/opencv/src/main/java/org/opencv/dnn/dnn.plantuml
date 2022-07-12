@@ -1,0 +1,446 @@
+@startuml
+
+title __DNN's Class Diagram__\n
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.ClassificationModel {
+          + ClassificationModel()
+          + ClassificationModel()
+          + ClassificationModel()
+          {static} + __fromPtr__()
+          + classify()
+          # ClassificationModel()
+          # finalize()
+          {static} - ClassificationModel_0()
+          {static} - ClassificationModel_1()
+          {static} - ClassificationModel_2()
+          {static} - classify_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.DetectionModel {
+          + DetectionModel()
+          + DetectionModel()
+          + DetectionModel()
+          {static} + __fromPtr__()
+          + detect()
+          + detect()
+          + detect()
+          # DetectionModel()
+          # finalize()
+          {static} - DetectionModel_0()
+          {static} - DetectionModel_1()
+          {static} - DetectionModel_2()
+          {static} - delete()
+          {static} - detect_0()
+          {static} - detect_1()
+          {static} - detect_2()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.DictValue {
+          # nativeObj : long
+          + DictValue()
+          + DictValue()
+          + DictValue()
+          {static} + __fromPtr__()
+          + getIntValue()
+          + getIntValue()
+          + getNativeObjAddr()
+          + getRealValue()
+          + getRealValue()
+          + getStringValue()
+          + getStringValue()
+          + isInt()
+          + isReal()
+          + isString()
+          # DictValue()
+          # finalize()
+          {static} - DictValue_0()
+          {static} - DictValue_1()
+          {static} - DictValue_2()
+          {static} - delete()
+          {static} - getIntValue_0()
+          {static} - getIntValue_1()
+          {static} - getRealValue_0()
+          {static} - getRealValue_1()
+          {static} - getStringValue_0()
+          {static} - getStringValue_1()
+          {static} - isInt_0()
+          {static} - isReal_0()
+          {static} - isString_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Dnn {
+          {static} + DNN_BACKEND_CUDA : int
+          {static} + DNN_BACKEND_DEFAULT : int
+          {static} + DNN_BACKEND_HALIDE : int
+          {static} + DNN_BACKEND_INFERENCE_ENGINE : int
+          {static} + DNN_BACKEND_OPENCV : int
+          {static} + DNN_BACKEND_VKCOM : int
+          {static} + DNN_TARGET_CPU : int
+          {static} + DNN_TARGET_CUDA : int
+          {static} + DNN_TARGET_CUDA_FP16 : int
+          {static} + DNN_TARGET_FPGA : int
+          {static} + DNN_TARGET_MYRIAD : int
+          {static} + DNN_TARGET_OPENCL : int
+          {static} + DNN_TARGET_OPENCL_FP16 : int
+          {static} + DNN_TARGET_VULKAN : int
+          {static} + NMSBoxes()
+          {static} + NMSBoxes()
+          {static} + NMSBoxes()
+          {static} + NMSBoxes()
+          {static} + NMSBoxes()
+          {static} + NMSBoxes()
+          {static} + NMSBoxesRotated()
+          {static} + NMSBoxesRotated()
+          {static} + NMSBoxesRotated()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImage()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + blobFromImages()
+          {static} + getInferenceEngineBackendType()
+          {static} + getInferenceEngineVPUType()
+          {static} + imagesFromBlob()
+          {static} + readNet()
+          {static} + readNet()
+          {static} + readNet()
+          {static} + readNet()
+          {static} + readNet()
+          {static} + readNetFromCaffe()
+          {static} + readNetFromCaffe()
+          {static} + readNetFromCaffe()
+          {static} + readNetFromCaffe()
+          {static} + readNetFromDarknet()
+          {static} + readNetFromDarknet()
+          {static} + readNetFromDarknet()
+          {static} + readNetFromDarknet()
+          {static} + readNetFromModelOptimizer()
+          {static} + readNetFromModelOptimizer()
+          {static} + readNetFromONNX()
+          {static} + readNetFromONNX()
+          {static} + readNetFromTensorflow()
+          {static} + readNetFromTensorflow()
+          {static} + readNetFromTensorflow()
+          {static} + readNetFromTensorflow()
+          {static} + readNetFromTorch()
+          {static} + readNetFromTorch()
+          {static} + readNetFromTorch()
+          {static} + readTensorFromONNX()
+          {static} + readTorchBlob()
+          {static} + readTorchBlob()
+          {static} + resetMyriadDevice()
+          {static} + setInferenceEngineBackendType()
+          {static} + shrinkCaffeModel()
+          {static} + shrinkCaffeModel()
+          {static} + writeTextGraph()
+          {static} - NMSBoxesRotated_0()
+          {static} - NMSBoxesRotated_1()
+          {static} - NMSBoxesRotated_2()
+          {static} - NMSBoxes_0()
+          {static} - NMSBoxes_1()
+          {static} - NMSBoxes_2()
+          {static} - NMSBoxes_3()
+          {static} - NMSBoxes_4()
+          {static} - NMSBoxes_5()
+          {static} - blobFromImage_0()
+          {static} - blobFromImage_1()
+          {static} - blobFromImage_2()
+          {static} - blobFromImage_3()
+          {static} - blobFromImage_4()
+          {static} - blobFromImage_5()
+          {static} - blobFromImage_6()
+          {static} - blobFromImages_0()
+          {static} - blobFromImages_1()
+          {static} - blobFromImages_2()
+          {static} - blobFromImages_3()
+          {static} - blobFromImages_4()
+          {static} - blobFromImages_5()
+          {static} - blobFromImages_6()
+          {static} - getInferenceEngineBackendType_0()
+          {static} - getInferenceEngineVPUType_0()
+          {static} - imagesFromBlob_0()
+          {static} - readNetFromCaffe_0()
+          {static} - readNetFromCaffe_1()
+          {static} - readNetFromCaffe_2()
+          {static} - readNetFromCaffe_3()
+          {static} - readNetFromDarknet_0()
+          {static} - readNetFromDarknet_1()
+          {static} - readNetFromDarknet_2()
+          {static} - readNetFromDarknet_3()
+          {static} - readNetFromModelOptimizer_0()
+          {static} - readNetFromModelOptimizer_1()
+          {static} - readNetFromONNX_0()
+          {static} - readNetFromONNX_1()
+          {static} - readNetFromTensorflow_0()
+          {static} - readNetFromTensorflow_1()
+          {static} - readNetFromTensorflow_2()
+          {static} - readNetFromTensorflow_3()
+          {static} - readNetFromTorch_0()
+          {static} - readNetFromTorch_1()
+          {static} - readNetFromTorch_2()
+          {static} - readNet_0()
+          {static} - readNet_1()
+          {static} - readNet_2()
+          {static} - readNet_3()
+          {static} - readNet_4()
+          {static} - readTensorFromONNX_0()
+          {static} - readTorchBlob_0()
+          {static} - readTorchBlob_1()
+          {static} - resetMyriadDevice_0()
+          {static} - setInferenceEngineBackendType_0()
+          {static} - shrinkCaffeModel_0()
+          {static} - shrinkCaffeModel_1()
+          {static} - writeTextGraph_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.KeypointsModel {
+          + KeypointsModel()
+          + KeypointsModel()
+          + KeypointsModel()
+          {static} + __fromPtr__()
+          + estimate()
+          + estimate()
+          # KeypointsModel()
+          # finalize()
+          {static} - KeypointsModel_0()
+          {static} - KeypointsModel_1()
+          {static} - KeypointsModel_2()
+          {static} - delete()
+          {static} - estimate_0()
+          {static} - estimate_1()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Layer {
+          {static} + __fromPtr__()
+          + finalize()
+          + get_blobs()
+          + get_name()
+          + get_preferableTarget()
+          + get_type()
+          + outputNameToIndex()
+          + run()
+          + set_blobs()
+          # Layer()
+          # finalize()
+          {static} - delete()
+          {static} - finalize_0()
+          {static} - get_blobs_0()
+          {static} - get_name_0()
+          {static} - get_preferableTarget_0()
+          {static} - get_type_0()
+          {static} - outputNameToIndex_0()
+          {static} - run_0()
+          {static} - set_blobs_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Model {
+          + Model()
+          + Model()
+          + Model()
+          {static} + __fromPtr__()
+          + predict()
+          + setInputCrop()
+          + setInputMean()
+          + setInputParams()
+          + setInputParams()
+          + setInputParams()
+          + setInputParams()
+          + setInputParams()
+          + setInputParams()
+          + setInputScale()
+          + setInputSize()
+          + setInputSize()
+          + setInputSwapRB()
+          # Model()
+          # finalize()
+          {static} - Model_0()
+          {static} - Model_1()
+          {static} - Model_2()
+          {static} - delete()
+          {static} - predict_0()
+          {static} - setInputCrop_0()
+          {static} - setInputMean_0()
+          {static} - setInputParams_0()
+          {static} - setInputParams_1()
+          {static} - setInputParams_2()
+          {static} - setInputParams_3()
+          {static} - setInputParams_4()
+          {static} - setInputParams_5()
+          {static} - setInputScale_0()
+          {static} - setInputSize_0()
+          {static} - setInputSize_1()
+          {static} - setInputSwapRB_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Net {
+          # nativeObj : long
+          + Net()
+          {static} + __fromPtr__()
+          + connect()
+          + dump()
+          + dumpToFile()
+          + empty()
+          + enableFusion()
+          + forward()
+          + forward()
+          + forward()
+          + forward()
+          + forward()
+          + getFLOPS()
+          + getFLOPS()
+          + getFLOPS()
+          + getFLOPS()
+          + getLayer()
+          + getLayerId()
+          + getLayerNames()
+          + getLayerTypes()
+          + getLayersCount()
+          + getMemoryConsumption()
+          + getMemoryConsumption()
+          + getMemoryConsumption()
+          + getNativeObjAddr()
+          + getParam()
+          + getParam()
+          + getPerfProfile()
+          + getUnconnectedOutLayers()
+          + getUnconnectedOutLayersNames()
+          {static} + readFromModelOptimizer()
+          {static} + readFromModelOptimizer()
+          + setHalideScheduler()
+          + setInput()
+          + setInput()
+          + setInput()
+          + setInput()
+          + setInputsNames()
+          + setParam()
+          + setPreferableBackend()
+          + setPreferableTarget()
+          # Net()
+          # finalize()
+          {static} - Net_0()
+          {static} - connect_0()
+          {static} - delete()
+          {static} - dumpToFile_0()
+          {static} - dump_0()
+          {static} - empty_0()
+          {static} - enableFusion_0()
+          {static} - forward_0()
+          {static} - forward_1()
+          {static} - forward_2()
+          {static} - forward_3()
+          {static} - forward_4()
+          {static} - getFLOPS_0()
+          {static} - getFLOPS_1()
+          {static} - getFLOPS_2()
+          {static} - getFLOPS_3()
+          {static} - getLayerId_0()
+          {static} - getLayerNames_0()
+          {static} - getLayerTypes_0()
+          {static} - getLayer_0()
+          {static} - getLayersCount_0()
+          {static} - getMemoryConsumption_0()
+          {static} - getMemoryConsumption_1()
+          {static} - getMemoryConsumption_2()
+          {static} - getParam_0()
+          {static} - getParam_1()
+          {static} - getPerfProfile_0()
+          {static} - getUnconnectedOutLayersNames_0()
+          {static} - getUnconnectedOutLayers_0()
+          {static} - readFromModelOptimizer_0()
+          {static} - readFromModelOptimizer_1()
+          {static} - setHalideScheduler_0()
+          {static} - setInput_0()
+          {static} - setInput_1()
+          {static} - setInput_2()
+          {static} - setInput_3()
+          {static} - setInputsNames_0()
+          {static} - setParam_0()
+          {static} - setPreferableBackend_0()
+          {static} - setPreferableTarget_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.SegmentationModel {
+          + SegmentationModel()
+          + SegmentationModel()
+          + SegmentationModel()
+          {static} + __fromPtr__()
+          + segment()
+          # SegmentationModel()
+          # finalize()
+          {static} - SegmentationModel_0()
+          {static} - SegmentationModel_1()
+          {static} - SegmentationModel_2()
+          {static} - delete()
+          {static} - segment_0()
+      }
+    }
+  }
+  
+
+  org.opencv.dnn.ClassificationModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.DetectionModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.KeypointsModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.Layer -up-|> org.opencv.core.Algorithm
+  org.opencv.dnn.Model -up-|> org.opencv.dnn.Net
+  org.opencv.dnn.SegmentationModel -up-|> org.opencv.dnn.Model
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

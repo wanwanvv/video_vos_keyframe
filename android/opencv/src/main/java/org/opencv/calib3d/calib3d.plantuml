@@ -1,0 +1,645 @@
+@startuml
+
+title __CALIB3D's Class Diagram__\n
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.Calib3d {
+          {static} + CALIB_CB_ACCURACY : int
+          {static} + CALIB_CB_ADAPTIVE_THRESH : int
+          {static} + CALIB_CB_ASYMMETRIC_GRID : int
+          {static} + CALIB_CB_CLUSTERING : int
+          {static} + CALIB_CB_EXHAUSTIVE : int
+          {static} + CALIB_CB_FAST_CHECK : int
+          {static} + CALIB_CB_FILTER_QUADS : int
+          {static} + CALIB_CB_NORMALIZE_IMAGE : int
+          {static} + CALIB_CB_SYMMETRIC_GRID : int
+          {static} + CALIB_FIX_ASPECT_RATIO : int
+          {static} + CALIB_FIX_FOCAL_LENGTH : int
+          {static} + CALIB_FIX_INTRINSIC : int
+          {static} + CALIB_FIX_K1 : int
+          {static} + CALIB_FIX_K2 : int
+          {static} + CALIB_FIX_K3 : int
+          {static} + CALIB_FIX_K4 : int
+          {static} + CALIB_FIX_K5 : int
+          {static} + CALIB_FIX_K6 : int
+          {static} + CALIB_FIX_PRINCIPAL_POINT : int
+          {static} + CALIB_FIX_S1_S2_S3_S4 : int
+          {static} + CALIB_FIX_TANGENT_DIST : int
+          {static} + CALIB_FIX_TAUX_TAUY : int
+          {static} + CALIB_HAND_EYE_ANDREFF : int
+          {static} + CALIB_HAND_EYE_DANIILIDIS : int
+          {static} + CALIB_HAND_EYE_HORAUD : int
+          {static} + CALIB_HAND_EYE_PARK : int
+          {static} + CALIB_HAND_EYE_TSAI : int
+          {static} + CALIB_NINTRINSIC : int
+          {static} + CALIB_RATIONAL_MODEL : int
+          {static} + CALIB_SAME_FOCAL_LENGTH : int
+          {static} + CALIB_THIN_PRISM_MODEL : int
+          {static} + CALIB_TILTED_MODEL : int
+          {static} + CALIB_USE_EXTRINSIC_GUESS : int
+          {static} + CALIB_USE_INTRINSIC_GUESS : int
+          {static} + CALIB_USE_LU : int
+          {static} + CALIB_USE_QR : int
+          {static} + CALIB_ZERO_DISPARITY : int
+          {static} + CALIB_ZERO_TANGENT_DIST : int
+          {static} + CV_DLS : int
+          {static} + CV_EPNP : int
+          {static} + CV_ITERATIVE : int
+          {static} + CV_P3P : int
+          {static} + CirclesGridFinderParameters_ASYMMETRIC_GRID : int
+          {static} + CirclesGridFinderParameters_SYMMETRIC_GRID : int
+          {static} + CvLevMarq_CALC_J : int
+          {static} + CvLevMarq_CHECK_ERR : int
+          {static} + CvLevMarq_DONE : int
+          {static} + CvLevMarq_STARTED : int
+          {static} + FM_7POINT : int
+          {static} + FM_8POINT : int
+          {static} + FM_LMEDS : int
+          {static} + FM_RANSAC : int
+          {static} + LMEDS : int
+          {static} + PROJ_SPHERICAL_EQRECT : int
+          {static} + PROJ_SPHERICAL_ORTHO : int
+          {static} + RANSAC : int
+          {static} + RHO : int
+          {static} + SOLVEPNP_AP3P : int
+          {static} + SOLVEPNP_DLS : int
+          {static} + SOLVEPNP_EPNP : int
+          {static} + SOLVEPNP_IPPE : int
+          {static} + SOLVEPNP_IPPE_SQUARE : int
+          {static} + SOLVEPNP_ITERATIVE : int
+          {static} + SOLVEPNP_MAX_COUNT : int
+          {static} + SOLVEPNP_P3P : int
+          {static} + SOLVEPNP_UPNP : int
+          {static} + fisheye_CALIB_CHECK_COND : int
+          {static} + fisheye_CALIB_FIX_INTRINSIC : int
+          {static} + fisheye_CALIB_FIX_K1 : int
+          {static} + fisheye_CALIB_FIX_K2 : int
+          {static} + fisheye_CALIB_FIX_K3 : int
+          {static} + fisheye_CALIB_FIX_K4 : int
+          {static} + fisheye_CALIB_FIX_PRINCIPAL_POINT : int
+          {static} + fisheye_CALIB_FIX_SKEW : int
+          {static} + fisheye_CALIB_RECOMPUTE_EXTRINSIC : int
+          {static} + fisheye_CALIB_USE_INTRINSIC_GUESS : int
+          {static} + RQDecomp3x3()
+          {static} + RQDecomp3x3()
+          {static} + RQDecomp3x3()
+          {static} + RQDecomp3x3()
+          {static} + Rodrigues()
+          {static} + Rodrigues()
+          {static} + calibrateCamera()
+          {static} + calibrateCamera()
+          {static} + calibrateCamera()
+          {static} + calibrateCameraExtended()
+          {static} + calibrateCameraExtended()
+          {static} + calibrateCameraExtended()
+          {static} + calibrateCameraRO()
+          {static} + calibrateCameraRO()
+          {static} + calibrateCameraRO()
+          {static} + calibrateCameraROExtended()
+          {static} + calibrateCameraROExtended()
+          {static} + calibrateCameraROExtended()
+          {static} + calibrateHandEye()
+          {static} + calibrateHandEye()
+          {static} + calibrationMatrixValues()
+          {static} + checkChessboard()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + composeRT()
+          {static} + computeCorrespondEpilines()
+          {static} + convertPointsFromHomogeneous()
+          {static} + convertPointsToHomogeneous()
+          {static} + correctMatches()
+          {static} + decomposeEssentialMat()
+          {static} + decomposeHomographyMat()
+          {static} + decomposeProjectionMatrix()
+          {static} + decomposeProjectionMatrix()
+          {static} + decomposeProjectionMatrix()
+          {static} + decomposeProjectionMatrix()
+          {static} + decomposeProjectionMatrix()
+          {static} + drawChessboardCorners()
+          {static} + drawFrameAxes()
+          {static} + drawFrameAxes()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine2D()
+          {static} + estimateAffine3D()
+          {static} + estimateAffine3D()
+          {static} + estimateAffine3D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + estimateAffinePartial2D()
+          {static} + filterHomographyDecompByVisibleRefpoints()
+          {static} + filterHomographyDecompByVisibleRefpoints()
+          {static} + filterSpeckles()
+          {static} + filterSpeckles()
+          {static} + find4QuadCornerSubpix()
+          {static} + findChessboardCorners()
+          {static} + findChessboardCorners()
+          {static} + findChessboardCornersSB()
+          {static} + findChessboardCornersSB()
+          {static} + findCirclesGrid()
+          {static} + findCirclesGrid()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findEssentialMat()
+          {static} + findFundamentalMat()
+          {static} + findFundamentalMat()
+          {static} + findFundamentalMat()
+          {static} + findFundamentalMat()
+          {static} + findFundamentalMat()
+          {static} + findHomography()
+          {static} + findHomography()
+          {static} + findHomography()
+          {static} + findHomography()
+          {static} + findHomography()
+          {static} + findHomography()
+          {static} + fisheye_calibrate()
+          {static} + fisheye_calibrate()
+          {static} + fisheye_calibrate()
+          {static} + fisheye_distortPoints()
+          {static} + fisheye_distortPoints()
+          {static} + fisheye_estimateNewCameraMatrixForUndistortRectify()
+          {static} + fisheye_estimateNewCameraMatrixForUndistortRectify()
+          {static} + fisheye_estimateNewCameraMatrixForUndistortRectify()
+          {static} + fisheye_estimateNewCameraMatrixForUndistortRectify()
+          {static} + fisheye_initUndistortRectifyMap()
+          {static} + fisheye_projectPoints()
+          {static} + fisheye_projectPoints()
+          {static} + fisheye_projectPoints()
+          {static} + fisheye_stereoCalibrate()
+          {static} + fisheye_stereoCalibrate()
+          {static} + fisheye_stereoCalibrate()
+          {static} + fisheye_stereoRectify()
+          {static} + fisheye_stereoRectify()
+          {static} + fisheye_stereoRectify()
+          {static} + fisheye_stereoRectify()
+          {static} + fisheye_undistortImage()
+          {static} + fisheye_undistortImage()
+          {static} + fisheye_undistortImage()
+          {static} + fisheye_undistortPoints()
+          {static} + fisheye_undistortPoints()
+          {static} + fisheye_undistortPoints()
+          {static} + getDefaultNewCameraMatrix()
+          {static} + getDefaultNewCameraMatrix()
+          {static} + getDefaultNewCameraMatrix()
+          {static} + getOptimalNewCameraMatrix()
+          {static} + getOptimalNewCameraMatrix()
+          {static} + getOptimalNewCameraMatrix()
+          {static} + getOptimalNewCameraMatrix()
+          {static} + getValidDisparityROI()
+          {static} + initCameraMatrix2D()
+          {static} + initCameraMatrix2D()
+          {static} + initUndistortRectifyMap()
+          {static} + matMulDeriv()
+          {static} + projectPoints()
+          {static} + projectPoints()
+          {static} + projectPoints()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + recoverPose()
+          {static} + rectify3Collinear()
+          {static} + reprojectImageTo3D()
+          {static} + reprojectImageTo3D()
+          {static} + reprojectImageTo3D()
+          {static} + sampsonDistance()
+          {static} + solveP3P()
+          {static} + solvePnP()
+          {static} + solvePnP()
+          {static} + solvePnP()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPGeneric()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRansac()
+          {static} + solvePnPRefineLM()
+          {static} + solvePnPRefineLM()
+          {static} + solvePnPRefineVVS()
+          {static} + solvePnPRefineVVS()
+          {static} + solvePnPRefineVVS()
+          {static} + stereoCalibrate()
+          {static} + stereoCalibrate()
+          {static} + stereoCalibrate()
+          {static} + stereoCalibrateExtended()
+          {static} + stereoCalibrateExtended()
+          {static} + stereoCalibrateExtended()
+          {static} + stereoRectify()
+          {static} + stereoRectify()
+          {static} + stereoRectify()
+          {static} + stereoRectify()
+          {static} + stereoRectify()
+          {static} + stereoRectify()
+          {static} + stereoRectifyUncalibrated()
+          {static} + stereoRectifyUncalibrated()
+          {static} + triangulatePoints()
+          {static} + undistort()
+          {static} + undistort()
+          {static} + undistortPoints()
+          {static} + undistortPoints()
+          {static} + undistortPoints()
+          {static} + undistortPointsIter()
+          {static} + validateDisparity()
+          {static} + validateDisparity()
+          {static} - RQDecomp3x3_0()
+          {static} - RQDecomp3x3_1()
+          {static} - RQDecomp3x3_2()
+          {static} - RQDecomp3x3_3()
+          {static} - Rodrigues_0()
+          {static} - Rodrigues_1()
+          {static} - calibrateCameraExtended_0()
+          {static} - calibrateCameraExtended_1()
+          {static} - calibrateCameraExtended_2()
+          {static} - calibrateCameraROExtended_0()
+          {static} - calibrateCameraROExtended_1()
+          {static} - calibrateCameraROExtended_2()
+          {static} - calibrateCameraRO_0()
+          {static} - calibrateCameraRO_1()
+          {static} - calibrateCameraRO_2()
+          {static} - calibrateCamera_0()
+          {static} - calibrateCamera_1()
+          {static} - calibrateCamera_2()
+          {static} - calibrateHandEye_0()
+          {static} - calibrateHandEye_1()
+          {static} - calibrationMatrixValues_0()
+          {static} - checkChessboard_0()
+          {static} - composeRT_0()
+          {static} - composeRT_1()
+          {static} - composeRT_2()
+          {static} - composeRT_3()
+          {static} - composeRT_4()
+          {static} - composeRT_5()
+          {static} - composeRT_6()
+          {static} - composeRT_7()
+          {static} - composeRT_8()
+          {static} - computeCorrespondEpilines_0()
+          {static} - convertPointsFromHomogeneous_0()
+          {static} - convertPointsToHomogeneous_0()
+          {static} - correctMatches_0()
+          {static} - decomposeEssentialMat_0()
+          {static} - decomposeHomographyMat_0()
+          {static} - decomposeProjectionMatrix_0()
+          {static} - decomposeProjectionMatrix_1()
+          {static} - decomposeProjectionMatrix_2()
+          {static} - decomposeProjectionMatrix_3()
+          {static} - decomposeProjectionMatrix_4()
+          {static} - drawChessboardCorners_0()
+          {static} - drawFrameAxes_0()
+          {static} - drawFrameAxes_1()
+          {static} - estimateAffine2D_0()
+          {static} - estimateAffine2D_1()
+          {static} - estimateAffine2D_2()
+          {static} - estimateAffine2D_3()
+          {static} - estimateAffine2D_4()
+          {static} - estimateAffine2D_5()
+          {static} - estimateAffine2D_6()
+          {static} - estimateAffine3D_0()
+          {static} - estimateAffine3D_1()
+          {static} - estimateAffine3D_2()
+          {static} - estimateAffinePartial2D_0()
+          {static} - estimateAffinePartial2D_1()
+          {static} - estimateAffinePartial2D_2()
+          {static} - estimateAffinePartial2D_3()
+          {static} - estimateAffinePartial2D_4()
+          {static} - estimateAffinePartial2D_5()
+          {static} - estimateAffinePartial2D_6()
+          {static} - filterHomographyDecompByVisibleRefpoints_0()
+          {static} - filterHomographyDecompByVisibleRefpoints_1()
+          {static} - filterSpeckles_0()
+          {static} - filterSpeckles_1()
+          {static} - find4QuadCornerSubpix_0()
+          {static} - findChessboardCornersSB_0()
+          {static} - findChessboardCornersSB_1()
+          {static} - findChessboardCorners_0()
+          {static} - findChessboardCorners_1()
+          {static} - findCirclesGrid_0()
+          {static} - findCirclesGrid_2()
+          {static} - findEssentialMat_0()
+          {static} - findEssentialMat_1()
+          {static} - findEssentialMat_10()
+          {static} - findEssentialMat_11()
+          {static} - findEssentialMat_2()
+          {static} - findEssentialMat_3()
+          {static} - findEssentialMat_4()
+          {static} - findEssentialMat_5()
+          {static} - findEssentialMat_6()
+          {static} - findEssentialMat_7()
+          {static} - findEssentialMat_8()
+          {static} - findEssentialMat_9()
+          {static} - findFundamentalMat_0()
+          {static} - findFundamentalMat_1()
+          {static} - findFundamentalMat_2()
+          {static} - findFundamentalMat_3()
+          {static} - findFundamentalMat_4()
+          {static} - findHomography_0()
+          {static} - findHomography_1()
+          {static} - findHomography_2()
+          {static} - findHomography_3()
+          {static} - findHomography_4()
+          {static} - findHomography_5()
+          {static} - fisheye_calibrate_0()
+          {static} - fisheye_calibrate_1()
+          {static} - fisheye_calibrate_2()
+          {static} - fisheye_distortPoints_0()
+          {static} - fisheye_distortPoints_1()
+          {static} - fisheye_estimateNewCameraMatrixForUndistortRectify_0()
+          {static} - fisheye_estimateNewCameraMatrixForUndistortRectify_1()
+          {static} - fisheye_estimateNewCameraMatrixForUndistortRectify_2()
+          {static} - fisheye_estimateNewCameraMatrixForUndistortRectify_3()
+          {static} - fisheye_initUndistortRectifyMap_0()
+          {static} - fisheye_projectPoints_0()
+          {static} - fisheye_projectPoints_1()
+          {static} - fisheye_projectPoints_2()
+          {static} - fisheye_stereoCalibrate_0()
+          {static} - fisheye_stereoCalibrate_1()
+          {static} - fisheye_stereoCalibrate_2()
+          {static} - fisheye_stereoRectify_0()
+          {static} - fisheye_stereoRectify_1()
+          {static} - fisheye_stereoRectify_2()
+          {static} - fisheye_stereoRectify_3()
+          {static} - fisheye_undistortImage_0()
+          {static} - fisheye_undistortImage_1()
+          {static} - fisheye_undistortImage_2()
+          {static} - fisheye_undistortPoints_0()
+          {static} - fisheye_undistortPoints_1()
+          {static} - fisheye_undistortPoints_2()
+          {static} - getDefaultNewCameraMatrix_0()
+          {static} - getDefaultNewCameraMatrix_1()
+          {static} - getDefaultNewCameraMatrix_2()
+          {static} - getOptimalNewCameraMatrix_0()
+          {static} - getOptimalNewCameraMatrix_1()
+          {static} - getOptimalNewCameraMatrix_2()
+          {static} - getOptimalNewCameraMatrix_3()
+          {static} - getValidDisparityROI_0()
+          {static} - initCameraMatrix2D_0()
+          {static} - initCameraMatrix2D_1()
+          {static} - initUndistortRectifyMap_0()
+          {static} - matMulDeriv_0()
+          {static} - projectPoints_0()
+          {static} - projectPoints_1()
+          {static} - projectPoints_2()
+          {static} - recoverPose_0()
+          {static} - recoverPose_1()
+          {static} - recoverPose_2()
+          {static} - recoverPose_3()
+          {static} - recoverPose_4()
+          {static} - recoverPose_5()
+          {static} - recoverPose_6()
+          {static} - recoverPose_7()
+          {static} - recoverPose_8()
+          {static} - rectify3Collinear_0()
+          {static} - reprojectImageTo3D_0()
+          {static} - reprojectImageTo3D_1()
+          {static} - reprojectImageTo3D_2()
+          {static} - sampsonDistance_0()
+          {static} - solveP3P_0()
+          {static} - solvePnPGeneric_0()
+          {static} - solvePnPGeneric_1()
+          {static} - solvePnPGeneric_2()
+          {static} - solvePnPGeneric_3()
+          {static} - solvePnPGeneric_4()
+          {static} - solvePnPGeneric_5()
+          {static} - solvePnPRansac_0()
+          {static} - solvePnPRansac_1()
+          {static} - solvePnPRansac_2()
+          {static} - solvePnPRansac_3()
+          {static} - solvePnPRansac_4()
+          {static} - solvePnPRansac_5()
+          {static} - solvePnPRansac_6()
+          {static} - solvePnPRefineLM_0()
+          {static} - solvePnPRefineLM_1()
+          {static} - solvePnPRefineVVS_0()
+          {static} - solvePnPRefineVVS_1()
+          {static} - solvePnPRefineVVS_2()
+          {static} - solvePnP_0()
+          {static} - solvePnP_1()
+          {static} - solvePnP_2()
+          {static} - stereoCalibrateExtended_0()
+          {static} - stereoCalibrateExtended_1()
+          {static} - stereoCalibrateExtended_2()
+          {static} - stereoCalibrate_0()
+          {static} - stereoCalibrate_1()
+          {static} - stereoCalibrate_2()
+          {static} - stereoRectifyUncalibrated_0()
+          {static} - stereoRectifyUncalibrated_1()
+          {static} - stereoRectify_0()
+          {static} - stereoRectify_1()
+          {static} - stereoRectify_2()
+          {static} - stereoRectify_3()
+          {static} - stereoRectify_4()
+          {static} - stereoRectify_5()
+          {static} - triangulatePoints_0()
+          {static} - undistortPointsIter_0()
+          {static} - undistortPoints_0()
+          {static} - undistortPoints_1()
+          {static} - undistortPoints_2()
+          {static} - undistort_0()
+          {static} - undistort_1()
+          {static} - validateDisparity_0()
+          {static} - validateDisparity_1()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoBM {
+          {static} + PREFILTER_NORMALIZED_RESPONSE : int
+          {static} + PREFILTER_XSOBEL : int
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + getPreFilterCap()
+          + getPreFilterSize()
+          + getPreFilterType()
+          + getROI1()
+          + getROI2()
+          + getSmallerBlockSize()
+          + getTextureThreshold()
+          + getUniquenessRatio()
+          + setPreFilterCap()
+          + setPreFilterSize()
+          + setPreFilterType()
+          + setROI1()
+          + setROI2()
+          + setSmallerBlockSize()
+          + setTextureThreshold()
+          + setUniquenessRatio()
+          # StereoBM()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_2()
+          {static} - delete()
+          {static} - getPreFilterCap_0()
+          {static} - getPreFilterSize_0()
+          {static} - getPreFilterType_0()
+          {static} - getROI1_0()
+          {static} - getROI2_0()
+          {static} - getSmallerBlockSize_0()
+          {static} - getTextureThreshold_0()
+          {static} - getUniquenessRatio_0()
+          {static} - setPreFilterCap_0()
+          {static} - setPreFilterSize_0()
+          {static} - setPreFilterType_0()
+          {static} - setROI1_0()
+          {static} - setROI2_0()
+          {static} - setSmallerBlockSize_0()
+          {static} - setTextureThreshold_0()
+          {static} - setUniquenessRatio_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoMatcher {
+          {static} + DISP_SCALE : int
+          {static} + DISP_SHIFT : int
+          {static} + __fromPtr__()
+          + compute()
+          + getBlockSize()
+          + getDisp12MaxDiff()
+          + getMinDisparity()
+          + getNumDisparities()
+          + getSpeckleRange()
+          + getSpeckleWindowSize()
+          + setBlockSize()
+          + setDisp12MaxDiff()
+          + setMinDisparity()
+          + setNumDisparities()
+          + setSpeckleRange()
+          + setSpeckleWindowSize()
+          # StereoMatcher()
+          # finalize()
+          {static} - compute_0()
+          {static} - delete()
+          {static} - getBlockSize_0()
+          {static} - getDisp12MaxDiff_0()
+          {static} - getMinDisparity_0()
+          {static} - getNumDisparities_0()
+          {static} - getSpeckleRange_0()
+          {static} - getSpeckleWindowSize_0()
+          {static} - setBlockSize_0()
+          {static} - setDisp12MaxDiff_0()
+          {static} - setMinDisparity_0()
+          {static} - setNumDisparities_0()
+          {static} - setSpeckleRange_0()
+          {static} - setSpeckleWindowSize_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoSGBM {
+          {static} + MODE_HH : int
+          {static} + MODE_HH4 : int
+          {static} + MODE_SGBM : int
+          {static} + MODE_SGBM_3WAY : int
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + getMode()
+          + getP1()
+          + getP2()
+          + getPreFilterCap()
+          + getUniquenessRatio()
+          + setMode()
+          + setP1()
+          + setP2()
+          + setPreFilterCap()
+          + setUniquenessRatio()
+          # StereoSGBM()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_10()
+          {static} - create_11()
+          {static} - create_2()
+          {static} - create_3()
+          {static} - create_4()
+          {static} - create_5()
+          {static} - create_6()
+          {static} - create_7()
+          {static} - create_8()
+          {static} - create_9()
+          {static} - delete()
+          {static} - getMode_0()
+          {static} - getP1_0()
+          {static} - getP2_0()
+          {static} - getPreFilterCap_0()
+          {static} - getUniquenessRatio_0()
+          {static} - setMode_0()
+          {static} - setP1_0()
+          {static} - setP2_0()
+          {static} - setPreFilterCap_0()
+          {static} - setUniquenessRatio_0()
+      }
+    }
+  }
+  
+
+  org.opencv.calib3d.StereoBM -up-|> org.opencv.calib3d.StereoMatcher
+  org.opencv.calib3d.StereoMatcher -up-|> org.opencv.core.Algorithm
+  org.opencv.calib3d.StereoSGBM -up-|> org.opencv.calib3d.StereoMatcher
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

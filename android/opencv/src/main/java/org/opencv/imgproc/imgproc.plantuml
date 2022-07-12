@@ -1,0 +1,1395 @@
+@startuml
+
+title __IMGPROC's Class Diagram__\n
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.CLAHE {
+          {static} + __fromPtr__()
+          + apply()
+          + collectGarbage()
+          + getClipLimit()
+          + getTilesGridSize()
+          + setClipLimit()
+          + setTilesGridSize()
+          # CLAHE()
+          # finalize()
+          {static} - apply_0()
+          {static} - collectGarbage_0()
+          {static} - delete()
+          {static} - getClipLimit_0()
+          {static} - getTilesGridSize_0()
+          {static} - setClipLimit_0()
+          {static} - setTilesGridSize_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHough {
+          {static} + __fromPtr__()
+          + detect()
+          + detect()
+          + detect()
+          + detect()
+          + getCannyHighThresh()
+          + getCannyLowThresh()
+          + getDp()
+          + getMaxBufferSize()
+          + getMinDist()
+          + setCannyHighThresh()
+          + setCannyLowThresh()
+          + setDp()
+          + setMaxBufferSize()
+          + setMinDist()
+          + setTemplate()
+          + setTemplate()
+          + setTemplate()
+          + setTemplate()
+          # GeneralizedHough()
+          # finalize()
+          {static} - delete()
+          {static} - detect_0()
+          {static} - detect_1()
+          {static} - detect_2()
+          {static} - detect_3()
+          {static} - getCannyHighThresh_0()
+          {static} - getCannyLowThresh_0()
+          {static} - getDp_0()
+          {static} - getMaxBufferSize_0()
+          {static} - getMinDist_0()
+          {static} - setCannyHighThresh_0()
+          {static} - setCannyLowThresh_0()
+          {static} - setDp_0()
+          {static} - setMaxBufferSize_0()
+          {static} - setMinDist_0()
+          {static} - setTemplate_0()
+          {static} - setTemplate_1()
+          {static} - setTemplate_2()
+          {static} - setTemplate_3()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHoughBallard {
+          {static} + __fromPtr__()
+          + getLevels()
+          + getVotesThreshold()
+          + setLevels()
+          + setVotesThreshold()
+          # GeneralizedHoughBallard()
+          # finalize()
+          {static} - delete()
+          {static} - getLevels_0()
+          {static} - getVotesThreshold_0()
+          {static} - setLevels_0()
+          {static} - setVotesThreshold_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHoughGuil {
+          {static} + __fromPtr__()
+          + getAngleEpsilon()
+          + getAngleStep()
+          + getAngleThresh()
+          + getLevels()
+          + getMaxAngle()
+          + getMaxScale()
+          + getMinAngle()
+          + getMinScale()
+          + getPosThresh()
+          + getScaleStep()
+          + getScaleThresh()
+          + getXi()
+          + setAngleEpsilon()
+          + setAngleStep()
+          + setAngleThresh()
+          + setLevels()
+          + setMaxAngle()
+          + setMaxScale()
+          + setMinAngle()
+          + setMinScale()
+          + setPosThresh()
+          + setScaleStep()
+          + setScaleThresh()
+          + setXi()
+          # GeneralizedHoughGuil()
+          # finalize()
+          {static} - delete()
+          {static} - getAngleEpsilon_0()
+          {static} - getAngleStep_0()
+          {static} - getAngleThresh_0()
+          {static} - getLevels_0()
+          {static} - getMaxAngle_0()
+          {static} - getMaxScale_0()
+          {static} - getMinAngle_0()
+          {static} - getMinScale_0()
+          {static} - getPosThresh_0()
+          {static} - getScaleStep_0()
+          {static} - getScaleThresh_0()
+          {static} - getXi_0()
+          {static} - setAngleEpsilon_0()
+          {static} - setAngleStep_0()
+          {static} - setAngleThresh_0()
+          {static} - setLevels_0()
+          {static} - setMaxAngle_0()
+          {static} - setMaxScale_0()
+          {static} - setMinAngle_0()
+          {static} - setMinScale_0()
+          {static} - setPosThresh_0()
+          {static} - setScaleStep_0()
+          {static} - setScaleThresh_0()
+          {static} - setXi_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Imgproc {
+          {static} + ADAPTIVE_THRESH_GAUSSIAN_C : int
+          {static} + ADAPTIVE_THRESH_MEAN_C : int
+          {static} + CCL_DEFAULT : int
+          {static} + CCL_GRANA : int
+          {static} + CCL_WU : int
+          {static} + CC_STAT_AREA : int
+          {static} + CC_STAT_HEIGHT : int
+          {static} + CC_STAT_LEFT : int
+          {static} + CC_STAT_MAX : int
+          {static} + CC_STAT_TOP : int
+          {static} + CC_STAT_WIDTH : int
+          {static} + CHAIN_APPROX_NONE : int
+          {static} + CHAIN_APPROX_SIMPLE : int
+          {static} + CHAIN_APPROX_TC89_KCOS : int
+          {static} + CHAIN_APPROX_TC89_L1 : int
+          {static} + COLORMAP_AUTUMN : int
+          {static} + COLORMAP_BONE : int
+          {static} + COLORMAP_CIVIDIS : int
+          {static} + COLORMAP_COOL : int
+          {static} + COLORMAP_HOT : int
+          {static} + COLORMAP_HSV : int
+          {static} + COLORMAP_INFERNO : int
+          {static} + COLORMAP_JET : int
+          {static} + COLORMAP_MAGMA : int
+          {static} + COLORMAP_OCEAN : int
+          {static} + COLORMAP_PARULA : int
+          {static} + COLORMAP_PINK : int
+          {static} + COLORMAP_PLASMA : int
+          {static} + COLORMAP_RAINBOW : int
+          {static} + COLORMAP_SPRING : int
+          {static} + COLORMAP_SUMMER : int
+          {static} + COLORMAP_TURBO : int
+          {static} + COLORMAP_TWILIGHT : int
+          {static} + COLORMAP_TWILIGHT_SHIFTED : int
+          {static} + COLORMAP_VIRIDIS : int
+          {static} + COLORMAP_WINTER : int
+          {static} + COLOR_BGR2BGR555 : int
+          {static} + COLOR_BGR2BGR565 : int
+          {static} + COLOR_BGR2BGRA : int
+          {static} + COLOR_BGR2GRAY : int
+          {static} + COLOR_BGR2HLS : int
+          {static} + COLOR_BGR2HLS_FULL : int
+          {static} + COLOR_BGR2HSV : int
+          {static} + COLOR_BGR2HSV_FULL : int
+          {static} + COLOR_BGR2Lab : int
+          {static} + COLOR_BGR2Luv : int
+          {static} + COLOR_BGR2RGB : int
+          {static} + COLOR_BGR2RGBA : int
+          {static} + COLOR_BGR2XYZ : int
+          {static} + COLOR_BGR2YCrCb : int
+          {static} + COLOR_BGR2YUV : int
+          {static} + COLOR_BGR2YUV_I420 : int
+          {static} + COLOR_BGR2YUV_IYUV : int
+          {static} + COLOR_BGR2YUV_YV12 : int
+          {static} + COLOR_BGR5552BGR : int
+          {static} + COLOR_BGR5552BGRA : int
+          {static} + COLOR_BGR5552GRAY : int
+          {static} + COLOR_BGR5552RGB : int
+          {static} + COLOR_BGR5552RGBA : int
+          {static} + COLOR_BGR5652BGR : int
+          {static} + COLOR_BGR5652BGRA : int
+          {static} + COLOR_BGR5652GRAY : int
+          {static} + COLOR_BGR5652RGB : int
+          {static} + COLOR_BGR5652RGBA : int
+          {static} + COLOR_BGRA2BGR : int
+          {static} + COLOR_BGRA2BGR555 : int
+          {static} + COLOR_BGRA2BGR565 : int
+          {static} + COLOR_BGRA2GRAY : int
+          {static} + COLOR_BGRA2RGB : int
+          {static} + COLOR_BGRA2RGBA : int
+          {static} + COLOR_BGRA2YUV_I420 : int
+          {static} + COLOR_BGRA2YUV_IYUV : int
+          {static} + COLOR_BGRA2YUV_YV12 : int
+          {static} + COLOR_BayerBG2BGR : int
+          {static} + COLOR_BayerBG2BGRA : int
+          {static} + COLOR_BayerBG2BGR_EA : int
+          {static} + COLOR_BayerBG2BGR_VNG : int
+          {static} + COLOR_BayerBG2GRAY : int
+          {static} + COLOR_BayerBG2RGB : int
+          {static} + COLOR_BayerBG2RGBA : int
+          {static} + COLOR_BayerBG2RGB_EA : int
+          {static} + COLOR_BayerBG2RGB_VNG : int
+          {static} + COLOR_BayerGB2BGR : int
+          {static} + COLOR_BayerGB2BGRA : int
+          {static} + COLOR_BayerGB2BGR_EA : int
+          {static} + COLOR_BayerGB2BGR_VNG : int
+          {static} + COLOR_BayerGB2GRAY : int
+          {static} + COLOR_BayerGB2RGB : int
+          {static} + COLOR_BayerGB2RGBA : int
+          {static} + COLOR_BayerGB2RGB_EA : int
+          {static} + COLOR_BayerGB2RGB_VNG : int
+          {static} + COLOR_BayerGR2BGR : int
+          {static} + COLOR_BayerGR2BGRA : int
+          {static} + COLOR_BayerGR2BGR_EA : int
+          {static} + COLOR_BayerGR2BGR_VNG : int
+          {static} + COLOR_BayerGR2GRAY : int
+          {static} + COLOR_BayerGR2RGB : int
+          {static} + COLOR_BayerGR2RGBA : int
+          {static} + COLOR_BayerGR2RGB_EA : int
+          {static} + COLOR_BayerGR2RGB_VNG : int
+          {static} + COLOR_BayerRG2BGR : int
+          {static} + COLOR_BayerRG2BGRA : int
+          {static} + COLOR_BayerRG2BGR_EA : int
+          {static} + COLOR_BayerRG2BGR_VNG : int
+          {static} + COLOR_BayerRG2GRAY : int
+          {static} + COLOR_BayerRG2RGB : int
+          {static} + COLOR_BayerRG2RGBA : int
+          {static} + COLOR_BayerRG2RGB_EA : int
+          {static} + COLOR_BayerRG2RGB_VNG : int
+          {static} + COLOR_COLORCVT_MAX : int
+          {static} + COLOR_GRAY2BGR : int
+          {static} + COLOR_GRAY2BGR555 : int
+          {static} + COLOR_GRAY2BGR565 : int
+          {static} + COLOR_GRAY2BGRA : int
+          {static} + COLOR_GRAY2RGB : int
+          {static} + COLOR_GRAY2RGBA : int
+          {static} + COLOR_HLS2BGR : int
+          {static} + COLOR_HLS2BGR_FULL : int
+          {static} + COLOR_HLS2RGB : int
+          {static} + COLOR_HLS2RGB_FULL : int
+          {static} + COLOR_HSV2BGR : int
+          {static} + COLOR_HSV2BGR_FULL : int
+          {static} + COLOR_HSV2RGB : int
+          {static} + COLOR_HSV2RGB_FULL : int
+          {static} + COLOR_LBGR2Lab : int
+          {static} + COLOR_LBGR2Luv : int
+          {static} + COLOR_LRGB2Lab : int
+          {static} + COLOR_LRGB2Luv : int
+          {static} + COLOR_Lab2BGR : int
+          {static} + COLOR_Lab2LBGR : int
+          {static} + COLOR_Lab2LRGB : int
+          {static} + COLOR_Lab2RGB : int
+          {static} + COLOR_Luv2BGR : int
+          {static} + COLOR_Luv2LBGR : int
+          {static} + COLOR_Luv2LRGB : int
+          {static} + COLOR_Luv2RGB : int
+          {static} + COLOR_RGB2BGR : int
+          {static} + COLOR_RGB2BGR555 : int
+          {static} + COLOR_RGB2BGR565 : int
+          {static} + COLOR_RGB2BGRA : int
+          {static} + COLOR_RGB2GRAY : int
+          {static} + COLOR_RGB2HLS : int
+          {static} + COLOR_RGB2HLS_FULL : int
+          {static} + COLOR_RGB2HSV : int
+          {static} + COLOR_RGB2HSV_FULL : int
+          {static} + COLOR_RGB2Lab : int
+          {static} + COLOR_RGB2Luv : int
+          {static} + COLOR_RGB2RGBA : int
+          {static} + COLOR_RGB2XYZ : int
+          {static} + COLOR_RGB2YCrCb : int
+          {static} + COLOR_RGB2YUV : int
+          {static} + COLOR_RGB2YUV_I420 : int
+          {static} + COLOR_RGB2YUV_IYUV : int
+          {static} + COLOR_RGB2YUV_YV12 : int
+          {static} + COLOR_RGBA2BGR : int
+          {static} + COLOR_RGBA2BGR555 : int
+          {static} + COLOR_RGBA2BGR565 : int
+          {static} + COLOR_RGBA2BGRA : int
+          {static} + COLOR_RGBA2GRAY : int
+          {static} + COLOR_RGBA2RGB : int
+          {static} + COLOR_RGBA2YUV_I420 : int
+          {static} + COLOR_RGBA2YUV_IYUV : int
+          {static} + COLOR_RGBA2YUV_YV12 : int
+          {static} + COLOR_RGBA2mRGBA : int
+          {static} + COLOR_XYZ2BGR : int
+          {static} + COLOR_XYZ2RGB : int
+          {static} + COLOR_YCrCb2BGR : int
+          {static} + COLOR_YCrCb2RGB : int
+          {static} + COLOR_YUV2BGR : int
+          {static} + COLOR_YUV2BGRA_I420 : int
+          {static} + COLOR_YUV2BGRA_IYUV : int
+          {static} + COLOR_YUV2BGRA_NV12 : int
+          {static} + COLOR_YUV2BGRA_NV21 : int
+          {static} + COLOR_YUV2BGRA_UYNV : int
+          {static} + COLOR_YUV2BGRA_UYVY : int
+          {static} + COLOR_YUV2BGRA_Y422 : int
+          {static} + COLOR_YUV2BGRA_YUNV : int
+          {static} + COLOR_YUV2BGRA_YUY2 : int
+          {static} + COLOR_YUV2BGRA_YUYV : int
+          {static} + COLOR_YUV2BGRA_YV12 : int
+          {static} + COLOR_YUV2BGRA_YVYU : int
+          {static} + COLOR_YUV2BGR_I420 : int
+          {static} + COLOR_YUV2BGR_IYUV : int
+          {static} + COLOR_YUV2BGR_NV12 : int
+          {static} + COLOR_YUV2BGR_NV21 : int
+          {static} + COLOR_YUV2BGR_UYNV : int
+          {static} + COLOR_YUV2BGR_UYVY : int
+          {static} + COLOR_YUV2BGR_Y422 : int
+          {static} + COLOR_YUV2BGR_YUNV : int
+          {static} + COLOR_YUV2BGR_YUY2 : int
+          {static} + COLOR_YUV2BGR_YUYV : int
+          {static} + COLOR_YUV2BGR_YV12 : int
+          {static} + COLOR_YUV2BGR_YVYU : int
+          {static} + COLOR_YUV2GRAY_420 : int
+          {static} + COLOR_YUV2GRAY_I420 : int
+          {static} + COLOR_YUV2GRAY_IYUV : int
+          {static} + COLOR_YUV2GRAY_NV12 : int
+          {static} + COLOR_YUV2GRAY_NV21 : int
+          {static} + COLOR_YUV2GRAY_UYNV : int
+          {static} + COLOR_YUV2GRAY_UYVY : int
+          {static} + COLOR_YUV2GRAY_Y422 : int
+          {static} + COLOR_YUV2GRAY_YUNV : int
+          {static} + COLOR_YUV2GRAY_YUY2 : int
+          {static} + COLOR_YUV2GRAY_YUYV : int
+          {static} + COLOR_YUV2GRAY_YV12 : int
+          {static} + COLOR_YUV2GRAY_YVYU : int
+          {static} + COLOR_YUV2RGB : int
+          {static} + COLOR_YUV2RGBA_I420 : int
+          {static} + COLOR_YUV2RGBA_IYUV : int
+          {static} + COLOR_YUV2RGBA_NV12 : int
+          {static} + COLOR_YUV2RGBA_NV21 : int
+          {static} + COLOR_YUV2RGBA_UYNV : int
+          {static} + COLOR_YUV2RGBA_UYVY : int
+          {static} + COLOR_YUV2RGBA_Y422 : int
+          {static} + COLOR_YUV2RGBA_YUNV : int
+          {static} + COLOR_YUV2RGBA_YUY2 : int
+          {static} + COLOR_YUV2RGBA_YUYV : int
+          {static} + COLOR_YUV2RGBA_YV12 : int
+          {static} + COLOR_YUV2RGBA_YVYU : int
+          {static} + COLOR_YUV2RGB_I420 : int
+          {static} + COLOR_YUV2RGB_IYUV : int
+          {static} + COLOR_YUV2RGB_NV12 : int
+          {static} + COLOR_YUV2RGB_NV21 : int
+          {static} + COLOR_YUV2RGB_UYNV : int
+          {static} + COLOR_YUV2RGB_UYVY : int
+          {static} + COLOR_YUV2RGB_Y422 : int
+          {static} + COLOR_YUV2RGB_YUNV : int
+          {static} + COLOR_YUV2RGB_YUY2 : int
+          {static} + COLOR_YUV2RGB_YUYV : int
+          {static} + COLOR_YUV2RGB_YV12 : int
+          {static} + COLOR_YUV2RGB_YVYU : int
+          {static} + COLOR_YUV420p2BGR : int
+          {static} + COLOR_YUV420p2BGRA : int
+          {static} + COLOR_YUV420p2GRAY : int
+          {static} + COLOR_YUV420p2RGB : int
+          {static} + COLOR_YUV420p2RGBA : int
+          {static} + COLOR_YUV420sp2BGR : int
+          {static} + COLOR_YUV420sp2BGRA : int
+          {static} + COLOR_YUV420sp2GRAY : int
+          {static} + COLOR_YUV420sp2RGB : int
+          {static} + COLOR_YUV420sp2RGBA : int
+          {static} + COLOR_mRGBA2RGBA : int
+          {static} + CONTOURS_MATCH_I1 : int
+          {static} + CONTOURS_MATCH_I2 : int
+          {static} + CONTOURS_MATCH_I3 : int
+          {static} + CV_BILATERAL : int
+          {static} + CV_BLUR : int
+          {static} + CV_BLUR_NO_SCALE : int
+          {static} + CV_CANNY_L2_GRADIENT : int
+          {static} + CV_CHAIN_CODE : int
+          {static} + CV_CLOCKWISE : int
+          {static} + CV_COMP_BHATTACHARYYA : int
+          {static} + CV_COMP_CHISQR : int
+          {static} + CV_COMP_CHISQR_ALT : int
+          {static} + CV_COMP_CORREL : int
+          {static} + CV_COMP_HELLINGER : int
+          {static} + CV_COMP_INTERSECT : int
+          {static} + CV_COMP_KL_DIV : int
+          {static} + CV_CONTOURS_MATCH_I1 : int
+          {static} + CV_CONTOURS_MATCH_I2 : int
+          {static} + CV_CONTOURS_MATCH_I3 : int
+          {static} + CV_COUNTER_CLOCKWISE : int
+          {static} + CV_DIST_C : int
+          {static} + CV_DIST_FAIR : int
+          {static} + CV_DIST_HUBER : int
+          {static} + CV_DIST_L1 : int
+          {static} + CV_DIST_L12 : int
+          {static} + CV_DIST_L2 : int
+          {static} + CV_DIST_LABEL_CCOMP : int
+          {static} + CV_DIST_LABEL_PIXEL : int
+          {static} + CV_DIST_MASK_3 : int
+          {static} + CV_DIST_MASK_5 : int
+          {static} + CV_DIST_MASK_PRECISE : int
+          {static} + CV_DIST_USER : int
+          {static} + CV_DIST_WELSCH : int
+          {static} + CV_GAUSSIAN : int
+          {static} + CV_GAUSSIAN_5x5 : int
+          {static} + CV_HOUGH_GRADIENT : int
+          {static} + CV_HOUGH_MULTI_SCALE : int
+          {static} + CV_HOUGH_PROBABILISTIC : int
+          {static} + CV_HOUGH_STANDARD : int
+          {static} + CV_LINK_RUNS : int
+          {static} + CV_MAX_SOBEL_KSIZE : int
+          {static} + CV_MEDIAN : int
+          {static} + CV_POLY_APPROX_DP : int
+          {static} + CV_RGBA2mRGBA : int
+          {static} + CV_SCHARR : int
+          {static} + CV_SHAPE_CROSS : int
+          {static} + CV_SHAPE_CUSTOM : int
+          {static} + CV_SHAPE_ELLIPSE : int
+          {static} + CV_SHAPE_RECT : int
+          {static} + CV_WARP_FILL_OUTLIERS : int
+          {static} + CV_WARP_INVERSE_MAP : int
+          {static} + CV_mRGBA2RGBA : int
+          {static} + DIST_C : int
+          {static} + DIST_FAIR : int
+          {static} + DIST_HUBER : int
+          {static} + DIST_L1 : int
+          {static} + DIST_L12 : int
+          {static} + DIST_L2 : int
+          {static} + DIST_LABEL_CCOMP : int
+          {static} + DIST_LABEL_PIXEL : int
+          {static} + DIST_MASK_3 : int
+          {static} + DIST_MASK_5 : int
+          {static} + DIST_MASK_PRECISE : int
+          {static} + DIST_USER : int
+          {static} + DIST_WELSCH : int
+          {static} + FILLED : int
+          {static} + FILTER_SCHARR : int
+          {static} + FLOODFILL_FIXED_RANGE : int
+          {static} + FLOODFILL_MASK_ONLY : int
+          {static} + FONT_HERSHEY_COMPLEX : int
+          {static} + FONT_HERSHEY_COMPLEX_SMALL : int
+          {static} + FONT_HERSHEY_DUPLEX : int
+          {static} + FONT_HERSHEY_PLAIN : int
+          {static} + FONT_HERSHEY_SCRIPT_COMPLEX : int
+          {static} + FONT_HERSHEY_SCRIPT_SIMPLEX : int
+          {static} + FONT_HERSHEY_SIMPLEX : int
+          {static} + FONT_HERSHEY_TRIPLEX : int
+          {static} + FONT_ITALIC : int
+          {static} + GC_BGD : int
+          {static} + GC_EVAL : int
+          {static} + GC_EVAL_FREEZE_MODEL : int
+          {static} + GC_FGD : int
+          {static} + GC_INIT_WITH_MASK : int
+          {static} + GC_INIT_WITH_RECT : int
+          {static} + GC_PR_BGD : int
+          {static} + GC_PR_FGD : int
+          {static} + HISTCMP_BHATTACHARYYA : int
+          {static} + HISTCMP_CHISQR : int
+          {static} + HISTCMP_CHISQR_ALT : int
+          {static} + HISTCMP_CORREL : int
+          {static} + HISTCMP_HELLINGER : int
+          {static} + HISTCMP_INTERSECT : int
+          {static} + HISTCMP_KL_DIV : int
+          {static} + HOUGH_GRADIENT : int
+          {static} + HOUGH_MULTI_SCALE : int
+          {static} + HOUGH_PROBABILISTIC : int
+          {static} + HOUGH_STANDARD : int
+          {static} + INTERSECT_FULL : int
+          {static} + INTERSECT_NONE : int
+          {static} + INTERSECT_PARTIAL : int
+          {static} + INTER_AREA : int
+          {static} + INTER_BITS : int
+          {static} + INTER_BITS2 : int
+          {static} + INTER_CUBIC : int
+          {static} + INTER_LANCZOS4 : int
+          {static} + INTER_LINEAR : int
+          {static} + INTER_LINEAR_EXACT : int
+          {static} + INTER_MAX : int
+          {static} + INTER_NEAREST : int
+          {static} + INTER_TAB_SIZE : int
+          {static} + INTER_TAB_SIZE2 : int
+          {static} + LINE_4 : int
+          {static} + LINE_8 : int
+          {static} + LINE_AA : int
+          {static} + LSD_REFINE_ADV : int
+          {static} + LSD_REFINE_NONE : int
+          {static} + LSD_REFINE_STD : int
+          {static} + MARKER_CROSS : int
+          {static} + MARKER_DIAMOND : int
+          {static} + MARKER_SQUARE : int
+          {static} + MARKER_STAR : int
+          {static} + MARKER_TILTED_CROSS : int
+          {static} + MARKER_TRIANGLE_DOWN : int
+          {static} + MARKER_TRIANGLE_UP : int
+          {static} + MORPH_BLACKHAT : int
+          {static} + MORPH_CLOSE : int
+          {static} + MORPH_CROSS : int
+          {static} + MORPH_DILATE : int
+          {static} + MORPH_ELLIPSE : int
+          {static} + MORPH_ERODE : int
+          {static} + MORPH_GRADIENT : int
+          {static} + MORPH_HITMISS : int
+          {static} + MORPH_OPEN : int
+          {static} + MORPH_RECT : int
+          {static} + MORPH_TOPHAT : int
+          {static} + RETR_CCOMP : int
+          {static} + RETR_EXTERNAL : int
+          {static} + RETR_FLOODFILL : int
+          {static} + RETR_LIST : int
+          {static} + RETR_TREE : int
+          {static} + THRESH_BINARY : int
+          {static} + THRESH_BINARY_INV : int
+          {static} + THRESH_MASK : int
+          {static} + THRESH_OTSU : int
+          {static} + THRESH_TOZERO : int
+          {static} + THRESH_TOZERO_INV : int
+          {static} + THRESH_TRIANGLE : int
+          {static} + THRESH_TRUNC : int
+          {static} + TM_CCOEFF : int
+          {static} + TM_CCOEFF_NORMED : int
+          {static} + TM_CCORR : int
+          {static} + TM_CCORR_NORMED : int
+          {static} + TM_SQDIFF : int
+          {static} + TM_SQDIFF_NORMED : int
+          {static} + WARP_FILL_OUTLIERS : int
+          {static} + WARP_INVERSE_MAP : int
+          {static} + WARP_POLAR_LINEAR : int
+          {static} + WARP_POLAR_LOG : int
+          {static} - CV_CHAIN_APPROX_NONE : int
+          {static} - CV_CHAIN_APPROX_SIMPLE : int
+          {static} - CV_CHAIN_APPROX_TC89_KCOS : int
+          {static} - CV_CHAIN_APPROX_TC89_L1 : int
+          {static} - CV_INTER_AREA : int
+          {static} - CV_INTER_CUBIC : int
+          {static} - CV_INTER_LANCZOS4 : int
+          {static} - CV_INTER_LINEAR : int
+          {static} - CV_INTER_NN : int
+          {static} - CV_MOP_BLACKHAT : int
+          {static} - CV_MOP_CLOSE : int
+          {static} - CV_MOP_DILATE : int
+          {static} - CV_MOP_ERODE : int
+          {static} - CV_MOP_GRADIENT : int
+          {static} - CV_MOP_OPEN : int
+          {static} - CV_MOP_TOPHAT : int
+          {static} - CV_RETR_CCOMP : int
+          {static} - CV_RETR_EXTERNAL : int
+          {static} - CV_RETR_FLOODFILL : int
+          {static} - CV_RETR_LIST : int
+          {static} - CV_RETR_TREE : int
+          {static} - CV_THRESH_BINARY : int
+          {static} - CV_THRESH_BINARY_INV : int
+          {static} - CV_THRESH_MASK : int
+          {static} - CV_THRESH_OTSU : int
+          {static} - CV_THRESH_TOZERO : int
+          {static} - CV_THRESH_TOZERO_INV : int
+          {static} - CV_THRESH_TRIANGLE : int
+          {static} - CV_THRESH_TRUNC : int
+          {static} - IPL_BORDER_CONSTANT : int
+          {static} - IPL_BORDER_REFLECT : int
+          {static} - IPL_BORDER_REFLECT_101 : int
+          {static} - IPL_BORDER_REPLICATE : int
+          {static} - IPL_BORDER_TRANSPARENT : int
+          {static} - IPL_BORDER_WRAP : int
+          {static} + Canny()
+          {static} + Canny()
+          {static} + Canny()
+          {static} + Canny()
+          {static} + Canny()
+          {static} + EMD()
+          {static} + EMD()
+          {static} + EMD()
+          {static} + GaussianBlur()
+          {static} + GaussianBlur()
+          {static} + GaussianBlur()
+          {static} + HoughCircles()
+          {static} + HoughCircles()
+          {static} + HoughCircles()
+          {static} + HoughCircles()
+          {static} + HoughCircles()
+          {static} + HoughLines()
+          {static} + HoughLines()
+          {static} + HoughLines()
+          {static} + HoughLines()
+          {static} + HoughLines()
+          {static} + HoughLinesP()
+          {static} + HoughLinesP()
+          {static} + HoughLinesP()
+          {static} + HoughLinesPointSet()
+          {static} + HuMoments()
+          {static} + Laplacian()
+          {static} + Laplacian()
+          {static} + Laplacian()
+          {static} + Laplacian()
+          {static} + Laplacian()
+          {static} + Scharr()
+          {static} + Scharr()
+          {static} + Scharr()
+          {static} + Scharr()
+          {static} + Sobel()
+          {static} + Sobel()
+          {static} + Sobel()
+          {static} + Sobel()
+          {static} + Sobel()
+          {static} + accumulate()
+          {static} + accumulate()
+          {static} + accumulateProduct()
+          {static} + accumulateProduct()
+          {static} + accumulateSquare()
+          {static} + accumulateSquare()
+          {static} + accumulateWeighted()
+          {static} + accumulateWeighted()
+          {static} + adaptiveThreshold()
+          {static} + applyColorMap()
+          {static} + applyColorMap()
+          {static} + approxPolyDP()
+          {static} + arcLength()
+          {static} + arrowedLine()
+          {static} + arrowedLine()
+          {static} + arrowedLine()
+          {static} + arrowedLine()
+          {static} + arrowedLine()
+          {static} + bilateralFilter()
+          {static} + bilateralFilter()
+          {static} + blur()
+          {static} + blur()
+          {static} + blur()
+          {static} + boundingRect()
+          {static} + boxFilter()
+          {static} + boxFilter()
+          {static} + boxFilter()
+          {static} + boxFilter()
+          {static} + boxPoints()
+          {static} + calcBackProject()
+          {static} + calcHist()
+          {static} + calcHist()
+          {static} + circle()
+          {static} + circle()
+          {static} + circle()
+          {static} + circle()
+          {static} + clipLine()
+          {static} + compareHist()
+          {static} + connectedComponents()
+          {static} + connectedComponents()
+          {static} + connectedComponents()
+          {static} + connectedComponentsWithAlgorithm()
+          {static} + connectedComponentsWithStats()
+          {static} + connectedComponentsWithStats()
+          {static} + connectedComponentsWithStats()
+          {static} + connectedComponentsWithStatsWithAlgorithm()
+          {static} + contourArea()
+          {static} + contourArea()
+          {static} + convertMaps()
+          {static} + convertMaps()
+          {static} + convexHull()
+          {static} + convexHull()
+          {static} + convexityDefects()
+          {static} + cornerEigenValsAndVecs()
+          {static} + cornerEigenValsAndVecs()
+          {static} + cornerHarris()
+          {static} + cornerHarris()
+          {static} + cornerMinEigenVal()
+          {static} + cornerMinEigenVal()
+          {static} + cornerMinEigenVal()
+          {static} + cornerSubPix()
+          {static} + createCLAHE()
+          {static} + createCLAHE()
+          {static} + createCLAHE()
+          {static} + createGeneralizedHoughBallard()
+          {static} + createGeneralizedHoughGuil()
+          {static} + createHanningWindow()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + createLineSegmentDetector()
+          {static} + cvtColor()
+          {static} + cvtColor()
+          {static} + cvtColorTwoPlane()
+          {static} + demosaicing()
+          {static} + demosaicing()
+          {static} + dilate()
+          {static} + dilate()
+          {static} + dilate()
+          {static} + dilate()
+          {static} + dilate()
+          {static} + distanceTransform()
+          {static} + distanceTransform()
+          {static} + distanceTransformWithLabels()
+          {static} + distanceTransformWithLabels()
+          {static} + drawContours()
+          {static} + drawContours()
+          {static} + drawContours()
+          {static} + drawContours()
+          {static} + drawContours()
+          {static} + drawContours()
+          {static} + drawMarker()
+          {static} + drawMarker()
+          {static} + drawMarker()
+          {static} + drawMarker()
+          {static} + drawMarker()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse()
+          {static} + ellipse2Poly()
+          {static} + equalizeHist()
+          {static} + erode()
+          {static} + erode()
+          {static} + erode()
+          {static} + erode()
+          {static} + erode()
+          {static} + fillConvexPoly()
+          {static} + fillConvexPoly()
+          {static} + fillConvexPoly()
+          {static} + fillPoly()
+          {static} + fillPoly()
+          {static} + fillPoly()
+          {static} + fillPoly()
+          {static} + filter2D()
+          {static} + filter2D()
+          {static} + filter2D()
+          {static} + filter2D()
+          {static} + findContours()
+          {static} + findContours()
+          {static} + fitEllipse()
+          {static} + fitEllipseAMS()
+          {static} + fitEllipseDirect()
+          {static} + fitLine()
+          {static} + floodFill()
+          {static} + floodFill()
+          {static} + floodFill()
+          {static} + floodFill()
+          {static} + floodFill()
+          {static} + getAffineTransform()
+          {static} + getDerivKernels()
+          {static} + getDerivKernels()
+          {static} + getDerivKernels()
+          {static} + getFontScaleFromHeight()
+          {static} + getFontScaleFromHeight()
+          {static} + getGaborKernel()
+          {static} + getGaborKernel()
+          {static} + getGaborKernel()
+          {static} + getGaussianKernel()
+          {static} + getGaussianKernel()
+          {static} + getPerspectiveTransform()
+          {static} + getPerspectiveTransform()
+          {static} + getRectSubPix()
+          {static} + getRectSubPix()
+          {static} + getRotationMatrix2D()
+          {static} + getStructuringElement()
+          {static} + getStructuringElement()
+          {static} + getTextSize()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + goodFeaturesToTrack()
+          {static} + grabCut()
+          {static} + grabCut()
+          {static} + integral()
+          {static} + integral()
+          {static} + integral2()
+          {static} + integral2()
+          {static} + integral2()
+          {static} + integral3()
+          {static} + integral3()
+          {static} + integral3()
+          {static} + intersectConvexConvex()
+          {static} + intersectConvexConvex()
+          {static} + invertAffineTransform()
+          {static} + isContourConvex()
+          {static} + line()
+          {static} + line()
+          {static} + line()
+          {static} + line()
+          {static} + linearPolar()
+          {static} + logPolar()
+          {static} + matchShapes()
+          {static} + matchTemplate()
+          {static} + matchTemplate()
+          {static} + medianBlur()
+          {static} + minAreaRect()
+          {static} + minEnclosingCircle()
+          {static} + minEnclosingTriangle()
+          {static} + moments()
+          {static} + moments()
+          {static} + morphologyEx()
+          {static} + morphologyEx()
+          {static} + morphologyEx()
+          {static} + morphologyEx()
+          {static} + morphologyEx()
+          {static} + phaseCorrelate()
+          {static} + phaseCorrelate()
+          {static} + phaseCorrelate()
+          {static} + pointPolygonTest()
+          {static} + polylines()
+          {static} + polylines()
+          {static} + polylines()
+          {static} + polylines()
+          {static} + preCornerDetect()
+          {static} + preCornerDetect()
+          {static} + putText()
+          {static} + putText()
+          {static} + putText()
+          {static} + putText()
+          {static} + pyrDown()
+          {static} + pyrDown()
+          {static} + pyrDown()
+          {static} + pyrMeanShiftFiltering()
+          {static} + pyrMeanShiftFiltering()
+          {static} + pyrMeanShiftFiltering()
+          {static} + pyrUp()
+          {static} + pyrUp()
+          {static} + pyrUp()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + rectangle()
+          {static} + remap()
+          {static} + remap()
+          {static} + remap()
+          {static} + resize()
+          {static} + resize()
+          {static} + resize()
+          {static} + resize()
+          {static} + rotatedRectangleIntersection()
+          {static} + sepFilter2D()
+          {static} + sepFilter2D()
+          {static} + sepFilter2D()
+          {static} + sepFilter2D()
+          {static} + spatialGradient()
+          {static} + spatialGradient()
+          {static} + spatialGradient()
+          {static} + sqrBoxFilter()
+          {static} + sqrBoxFilter()
+          {static} + sqrBoxFilter()
+          {static} + sqrBoxFilter()
+          {static} + threshold()
+          {static} + warpAffine()
+          {static} + warpAffine()
+          {static} + warpAffine()
+          {static} + warpAffine()
+          {static} + warpPerspective()
+          {static} + warpPerspective()
+          {static} + warpPerspective()
+          {static} + warpPerspective()
+          {static} + warpPolar()
+          {static} + watershed()
+          {static} - Canny_0()
+          {static} - Canny_1()
+          {static} - Canny_2()
+          {static} - Canny_3()
+          {static} - Canny_4()
+          {static} - EMD_0()
+          {static} - EMD_1()
+          {static} - EMD_3()
+          {static} - GaussianBlur_0()
+          {static} - GaussianBlur_1()
+          {static} - GaussianBlur_2()
+          {static} - HoughCircles_0()
+          {static} - HoughCircles_1()
+          {static} - HoughCircles_2()
+          {static} - HoughCircles_3()
+          {static} - HoughCircles_4()
+          {static} - HoughLinesP_0()
+          {static} - HoughLinesP_1()
+          {static} - HoughLinesP_2()
+          {static} - HoughLinesPointSet_0()
+          {static} - HoughLines_0()
+          {static} - HoughLines_1()
+          {static} - HoughLines_2()
+          {static} - HoughLines_3()
+          {static} - HoughLines_4()
+          {static} - HuMoments_0()
+          {static} - Laplacian_0()
+          {static} - Laplacian_1()
+          {static} - Laplacian_2()
+          {static} - Laplacian_3()
+          {static} - Laplacian_4()
+          {static} - Scharr_0()
+          {static} - Scharr_1()
+          {static} - Scharr_2()
+          {static} - Scharr_3()
+          {static} - Sobel_0()
+          {static} - Sobel_1()
+          {static} - Sobel_2()
+          {static} - Sobel_3()
+          {static} - Sobel_4()
+          {static} - accumulateProduct_0()
+          {static} - accumulateProduct_1()
+          {static} - accumulateSquare_0()
+          {static} - accumulateSquare_1()
+          {static} - accumulateWeighted_0()
+          {static} - accumulateWeighted_1()
+          {static} - accumulate_0()
+          {static} - accumulate_1()
+          {static} - adaptiveThreshold_0()
+          {static} - applyColorMap_0()
+          {static} - applyColorMap_1()
+          {static} - approxPolyDP_0()
+          {static} - arcLength_0()
+          {static} - arrowedLine_0()
+          {static} - arrowedLine_1()
+          {static} - arrowedLine_2()
+          {static} - arrowedLine_3()
+          {static} - arrowedLine_4()
+          {static} - bilateralFilter_0()
+          {static} - bilateralFilter_1()
+          {static} - blur_0()
+          {static} - blur_1()
+          {static} - blur_2()
+          {static} - boundingRect_0()
+          {static} - boxFilter_0()
+          {static} - boxFilter_1()
+          {static} - boxFilter_2()
+          {static} - boxFilter_3()
+          {static} - boxPoints_0()
+          {static} - calcBackProject_0()
+          {static} - calcHist_0()
+          {static} - calcHist_1()
+          {static} - circle_0()
+          {static} - circle_1()
+          {static} - circle_2()
+          {static} - circle_3()
+          {static} - clipLine_0()
+          {static} - compareHist_0()
+          {static} - connectedComponentsWithAlgorithm_0()
+          {static} - connectedComponentsWithStatsWithAlgorithm_0()
+          {static} - connectedComponentsWithStats_0()
+          {static} - connectedComponentsWithStats_1()
+          {static} - connectedComponentsWithStats_2()
+          {static} - connectedComponents_0()
+          {static} - connectedComponents_1()
+          {static} - connectedComponents_2()
+          {static} - contourArea_0()
+          {static} - contourArea_1()
+          {static} - convertMaps_0()
+          {static} - convertMaps_1()
+          {static} - convexHull_0()
+          {static} - convexHull_2()
+          {static} - convexityDefects_0()
+          {static} - cornerEigenValsAndVecs_0()
+          {static} - cornerEigenValsAndVecs_1()
+          {static} - cornerHarris_0()
+          {static} - cornerHarris_1()
+          {static} - cornerMinEigenVal_0()
+          {static} - cornerMinEigenVal_1()
+          {static} - cornerMinEigenVal_2()
+          {static} - cornerSubPix_0()
+          {static} - createCLAHE_0()
+          {static} - createCLAHE_1()
+          {static} - createCLAHE_2()
+          {static} - createGeneralizedHoughBallard_0()
+          {static} - createGeneralizedHoughGuil_0()
+          {static} - createHanningWindow_0()
+          {static} - createLineSegmentDetector_0()
+          {static} - createLineSegmentDetector_1()
+          {static} - createLineSegmentDetector_2()
+          {static} - createLineSegmentDetector_3()
+          {static} - createLineSegmentDetector_4()
+          {static} - createLineSegmentDetector_5()
+          {static} - createLineSegmentDetector_6()
+          {static} - createLineSegmentDetector_7()
+          {static} - createLineSegmentDetector_8()
+          {static} - cvtColorTwoPlane_0()
+          {static} - cvtColor_0()
+          {static} - cvtColor_1()
+          {static} - demosaicing_0()
+          {static} - demosaicing_1()
+          {static} - dilate_0()
+          {static} - dilate_1()
+          {static} - dilate_2()
+          {static} - dilate_3()
+          {static} - dilate_4()
+          {static} - distanceTransformWithLabels_0()
+          {static} - distanceTransformWithLabels_1()
+          {static} - distanceTransform_0()
+          {static} - distanceTransform_1()
+          {static} - drawContours_0()
+          {static} - drawContours_1()
+          {static} - drawContours_2()
+          {static} - drawContours_3()
+          {static} - drawContours_4()
+          {static} - drawContours_5()
+          {static} - drawMarker_0()
+          {static} - drawMarker_1()
+          {static} - drawMarker_2()
+          {static} - drawMarker_3()
+          {static} - drawMarker_4()
+          {static} - ellipse2Poly_0()
+          {static} - ellipse_0()
+          {static} - ellipse_1()
+          {static} - ellipse_2()
+          {static} - ellipse_3()
+          {static} - ellipse_4()
+          {static} - ellipse_5()
+          {static} - ellipse_6()
+          {static} - equalizeHist_0()
+          {static} - erode_0()
+          {static} - erode_1()
+          {static} - erode_2()
+          {static} - erode_3()
+          {static} - erode_4()
+          {static} - fillConvexPoly_0()
+          {static} - fillConvexPoly_1()
+          {static} - fillConvexPoly_2()
+          {static} - fillPoly_0()
+          {static} - fillPoly_1()
+          {static} - fillPoly_2()
+          {static} - fillPoly_3()
+          {static} - filter2D_0()
+          {static} - filter2D_1()
+          {static} - filter2D_2()
+          {static} - filter2D_3()
+          {static} - findContours_0()
+          {static} - findContours_1()
+          {static} - fitEllipseAMS_0()
+          {static} - fitEllipseDirect_0()
+          {static} - fitEllipse_0()
+          {static} - fitLine_0()
+          {static} - floodFill_0()
+          {static} - floodFill_1()
+          {static} - floodFill_2()
+          {static} - floodFill_3()
+          {static} - floodFill_4()
+          {static} - getAffineTransform_0()
+          {static} - getDerivKernels_0()
+          {static} - getDerivKernels_1()
+          {static} - getDerivKernels_2()
+          {static} - getFontScaleFromHeight_0()
+          {static} - getFontScaleFromHeight_1()
+          {static} - getGaborKernel_0()
+          {static} - getGaborKernel_1()
+          {static} - getGaborKernel_2()
+          {static} - getGaussianKernel_0()
+          {static} - getGaussianKernel_1()
+          {static} - getPerspectiveTransform_0()
+          {static} - getPerspectiveTransform_1()
+          {static} - getRectSubPix_0()
+          {static} - getRectSubPix_1()
+          {static} - getRotationMatrix2D_0()
+          {static} - getStructuringElement_0()
+          {static} - getStructuringElement_1()
+          {static} - goodFeaturesToTrack_0()
+          {static} - goodFeaturesToTrack_1()
+          {static} - goodFeaturesToTrack_2()
+          {static} - goodFeaturesToTrack_3()
+          {static} - goodFeaturesToTrack_4()
+          {static} - goodFeaturesToTrack_5()
+          {static} - goodFeaturesToTrack_6()
+          {static} - goodFeaturesToTrack_7()
+          {static} - grabCut_0()
+          {static} - grabCut_1()
+          {static} - integral2_0()
+          {static} - integral2_1()
+          {static} - integral2_2()
+          {static} - integral3_0()
+          {static} - integral3_1()
+          {static} - integral3_2()
+          {static} - integral_0()
+          {static} - integral_1()
+          {static} - intersectConvexConvex_0()
+          {static} - intersectConvexConvex_1()
+          {static} - invertAffineTransform_0()
+          {static} - isContourConvex_0()
+          {static} - line_0()
+          {static} - line_1()
+          {static} - line_2()
+          {static} - line_3()
+          {static} - linearPolar_0()
+          {static} - logPolar_0()
+          {static} - matchShapes_0()
+          {static} - matchTemplate_0()
+          {static} - matchTemplate_1()
+          {static} - medianBlur_0()
+          {static} - minAreaRect_0()
+          {static} - minEnclosingCircle_0()
+          {static} - minEnclosingTriangle_0()
+          {static} - moments_0()
+          {static} - moments_1()
+          {static} - morphologyEx_0()
+          {static} - morphologyEx_1()
+          {static} - morphologyEx_2()
+          {static} - morphologyEx_3()
+          {static} - morphologyEx_4()
+          {static} - n_getTextSize()
+          {static} - phaseCorrelate_0()
+          {static} - phaseCorrelate_1()
+          {static} - phaseCorrelate_2()
+          {static} - pointPolygonTest_0()
+          {static} - polylines_0()
+          {static} - polylines_1()
+          {static} - polylines_2()
+          {static} - polylines_3()
+          {static} - preCornerDetect_0()
+          {static} - preCornerDetect_1()
+          {static} - putText_0()
+          {static} - putText_1()
+          {static} - putText_2()
+          {static} - putText_3()
+          {static} - pyrDown_0()
+          {static} - pyrDown_1()
+          {static} - pyrDown_2()
+          {static} - pyrMeanShiftFiltering_0()
+          {static} - pyrMeanShiftFiltering_1()
+          {static} - pyrMeanShiftFiltering_2()
+          {static} - pyrUp_0()
+          {static} - pyrUp_1()
+          {static} - pyrUp_2()
+          {static} - rectangle_0()
+          {static} - rectangle_1()
+          {static} - rectangle_2()
+          {static} - rectangle_3()
+          {static} - rectangle_4()
+          {static} - rectangle_5()
+          {static} - rectangle_6()
+          {static} - rectangle_7()
+          {static} - remap_0()
+          {static} - remap_1()
+          {static} - remap_2()
+          {static} - resize_0()
+          {static} - resize_1()
+          {static} - resize_2()
+          {static} - resize_3()
+          {static} - rotatedRectangleIntersection_0()
+          {static} - sepFilter2D_0()
+          {static} - sepFilter2D_1()
+          {static} - sepFilter2D_2()
+          {static} - sepFilter2D_3()
+          {static} - spatialGradient_0()
+          {static} - spatialGradient_1()
+          {static} - spatialGradient_2()
+          {static} - sqrBoxFilter_0()
+          {static} - sqrBoxFilter_1()
+          {static} - sqrBoxFilter_2()
+          {static} - sqrBoxFilter_3()
+          {static} - threshold_0()
+          {static} - warpAffine_0()
+          {static} - warpAffine_1()
+          {static} - warpAffine_2()
+          {static} - warpAffine_3()
+          {static} - warpPerspective_0()
+          {static} - warpPerspective_1()
+          {static} - warpPerspective_2()
+          {static} - warpPerspective_3()
+          {static} - warpPolar_0()
+          {static} - watershed_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.LineSegmentDetector {
+          {static} + __fromPtr__()
+          + compareSegments()
+          + compareSegments()
+          + detect()
+          + detect()
+          + detect()
+          + detect()
+          + drawSegments()
+          # LineSegmentDetector()
+          # finalize()
+          {static} - compareSegments_0()
+          {static} - compareSegments_1()
+          {static} - delete()
+          {static} - detect_0()
+          {static} - detect_1()
+          {static} - detect_2()
+          {static} - detect_3()
+          {static} - drawSegments_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Moments {
+          + m00 : double
+          + m01 : double
+          + m02 : double
+          + m03 : double
+          + m10 : double
+          + m11 : double
+          + m12 : double
+          + m20 : double
+          + m21 : double
+          + m30 : double
+          + mu02 : double
+          + mu03 : double
+          + mu11 : double
+          + mu12 : double
+          + mu20 : double
+          + mu21 : double
+          + mu30 : double
+          + nu02 : double
+          + nu03 : double
+          + nu11 : double
+          + nu12 : double
+          + nu20 : double
+          + nu21 : double
+          + nu30 : double
+          + Moments()
+          + Moments()
+          + Moments()
+          + get_m00()
+          + get_m01()
+          + get_m02()
+          + get_m03()
+          + get_m10()
+          + get_m11()
+          + get_m12()
+          + get_m20()
+          + get_m21()
+          + get_m30()
+          + get_mu02()
+          + get_mu03()
+          + get_mu11()
+          + get_mu12()
+          + get_mu20()
+          + get_mu21()
+          + get_mu30()
+          + get_nu02()
+          + get_nu03()
+          + get_nu11()
+          + get_nu12()
+          + get_nu20()
+          + get_nu21()
+          + get_nu30()
+          + set()
+          + set_m00()
+          + set_m01()
+          + set_m02()
+          + set_m03()
+          + set_m10()
+          + set_m11()
+          + set_m12()
+          + set_m20()
+          + set_m21()
+          + set_m30()
+          + set_mu02()
+          + set_mu03()
+          + set_mu11()
+          + set_mu12()
+          + set_mu20()
+          + set_mu21()
+          + set_mu30()
+          + set_nu02()
+          + set_nu03()
+          + set_nu11()
+          + set_nu12()
+          + set_nu20()
+          + set_nu21()
+          + set_nu30()
+          + toString()
+          # completeState()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Subdiv2D {
+          {static} + NEXT_AROUND_DST : int
+          {static} + NEXT_AROUND_LEFT : int
+          {static} + NEXT_AROUND_ORG : int
+          {static} + NEXT_AROUND_RIGHT : int
+          {static} + PREV_AROUND_DST : int
+          {static} + PREV_AROUND_LEFT : int
+          {static} + PREV_AROUND_ORG : int
+          {static} + PREV_AROUND_RIGHT : int
+          {static} + PTLOC_ERROR : int
+          {static} + PTLOC_INSIDE : int
+          {static} + PTLOC_ON_EDGE : int
+          {static} + PTLOC_OUTSIDE_RECT : int
+          {static} + PTLOC_VERTEX : int
+          # nativeObj : long
+          + Subdiv2D()
+          + Subdiv2D()
+          {static} + __fromPtr__()
+          + edgeDst()
+          + edgeDst()
+          + edgeOrg()
+          + edgeOrg()
+          + findNearest()
+          + findNearest()
+          + getEdge()
+          + getEdgeList()
+          + getLeadingEdgeList()
+          + getNativeObjAddr()
+          + getTriangleList()
+          + getVertex()
+          + getVertex()
+          + getVoronoiFacetList()
+          + initDelaunay()
+          + insert()
+          + insert()
+          + locate()
+          + nextEdge()
+          + rotateEdge()
+          + symEdge()
+          # Subdiv2D()
+          # finalize()
+          {static} - Subdiv2D_0()
+          {static} - Subdiv2D_1()
+          {static} - delete()
+          {static} - edgeDst_0()
+          {static} - edgeDst_1()
+          {static} - edgeOrg_0()
+          {static} - edgeOrg_1()
+          {static} - findNearest_0()
+          {static} - findNearest_1()
+          {static} - getEdgeList_0()
+          {static} - getEdge_0()
+          {static} - getLeadingEdgeList_0()
+          {static} - getTriangleList_0()
+          {static} - getVertex_0()
+          {static} - getVertex_1()
+          {static} - getVoronoiFacetList_0()
+          {static} - initDelaunay_0()
+          {static} - insert_0()
+          {static} - insert_1()
+          {static} - locate_0()
+          {static} - nextEdge_0()
+          {static} - rotateEdge_0()
+          {static} - symEdge_0()
+      }
+    }
+  }
+  
+
+  org.opencv.imgproc.CLAHE -up-|> org.opencv.core.Algorithm
+  org.opencv.imgproc.GeneralizedHough -up-|> org.opencv.core.Algorithm
+  org.opencv.imgproc.GeneralizedHoughBallard -up-|> org.opencv.imgproc.GeneralizedHough
+  org.opencv.imgproc.GeneralizedHoughGuil -up-|> org.opencv.imgproc.GeneralizedHough
+  org.opencv.imgproc.LineSegmentDetector -up-|> org.opencv.core.Algorithm
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

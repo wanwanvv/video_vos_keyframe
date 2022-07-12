@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KfaVos</string>
+    <string name="ok">确定</string>
+    <string name="title_main">打开视频</string>
+    <string name="copy_right">Copyrights © %1$d</string>
+    <string name="app_description">Kfa-Vos是一款利用人工智能技术来对视频进行智能处理的Android App，采用基于关键帧的视频目标分割方法可以让用户只需轻松在目标对象上随意涂鸦，即可快速对视频中所有该物体进行分割和移除！</string>
+</resources>

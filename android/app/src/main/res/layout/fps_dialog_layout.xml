@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_radius"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/fps_dialog_bottomsheet_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/header_radius">
+
+        <ImageView
+            android:id="@+id/fps_dialog_bottomsheet_iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/close_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/fps_dialog_bottomsheet_iv_close"
+            android:text="选择视频帧数FPS"
+            android:textColor="@color/model_bottomdialog_title_textcolor"
+            android:textSize="@dimen/model_bottomdialog_title_textSize" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.weigan.loopview.LoopView
+            android:layout_marginTop="50dp"
+            android:id="@+id/fps_loopView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:awv_textsize="20"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

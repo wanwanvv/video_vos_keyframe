@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorTitleBar">#ed4255</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTitleText">#595959</color>
+    <color name="colorTitleLine">#CCCCCC</color>
+    <color name="fb_defaultColor">#3285ff</color>
+    <color name="fb_focusColor">#386AED</color>
+    <color name="fb_borderColor">#FFFFFF</color>
+    <color name="model_bottomdialog_title_textcolor">#515151</color>
+    <color name="model_bottomdialog_list_textcolor">#8a8a8a</color>
+    <color name="video_textview_color">#8a8a8a</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="catloading_view_background">#000000</color>
+</resources>

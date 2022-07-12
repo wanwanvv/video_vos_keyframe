@@ -1,0 +1,1247 @@
+@startuml
+
+title __OPENCV's Class Diagram__\n
+
+  namespace org.opencv {
+    class org.opencv.BuildConfig {
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.AsyncServiceHelper {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      abstract class org.opencv.android.BaseLoaderCallback {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.Camera2Renderer {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.CameraActivity {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      abstract class org.opencv.android.CameraBridgeViewBase {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      abstract class org.opencv.android.CameraGLRendererBase {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.CameraGLSurfaceView {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.CameraRenderer {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.FpsMeter {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      interface org.opencv.android.InstallCallbackInterface {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.JavaCamera2View {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.JavaCameraView {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      interface org.opencv.android.LoaderCallbackInterface {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.OpenCVLoader {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.StaticHelper {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace android {
+      class org.opencv.android.Utils {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.Calib3d {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoBM {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoMatcher {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace calib3d {
+      class org.opencv.calib3d.StereoSGBM {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Algorithm {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Core {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.CvException {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.CvType {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.DMatch {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.KeyPoint {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Mat {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfByte {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfDMatch {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfDouble {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfFloat {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfFloat4 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfFloat6 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfInt {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfInt4 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfKeyPoint {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfPoint {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfPoint2f {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfPoint3 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfPoint3f {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfRect {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfRect2d {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.MatOfRotatedRect {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Point {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Point3 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Range {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Rect {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Rect2d {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.RotatedRect {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Scalar {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.Size {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.TermCriteria {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace core {
+      class org.opencv.core.TickMeter {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.ClassificationModel {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.DetectionModel {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.DictValue {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Dnn {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.KeypointsModel {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Layer {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Model {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.Net {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace dnn {
+      class org.opencv.dnn.SegmentationModel {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace engine {
+      interface org.opencv.engine.OpenCVEngineInterface {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.AKAZE {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.AgastFeatureDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.BFMatcher {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.BOWImgDescriptorExtractor {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.BOWKMeansTrainer {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.BOWTrainer {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.BRISK {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.DescriptorMatcher {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.FastFeatureDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.Feature2D {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.Features2d {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.FlannBasedMatcher {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.GFTTDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.KAZE {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.MSER {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.ORB {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.Params {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace features2d {
+      class org.opencv.features2d.SimpleBlobDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgcodecs {
+      class org.opencv.imgcodecs.Imgcodecs {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.CLAHE {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHough {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHoughBallard {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.GeneralizedHoughGuil {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Imgproc {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.LineSegmentDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Moments {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace imgproc {
+      class org.opencv.imgproc.Subdiv2D {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.ANN_MLP {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.Boost {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.DTrees {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.EM {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.KNearest {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.LogisticRegression {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.Ml {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.NormalBayesClassifier {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.ParamGrid {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.RTrees {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.SVM {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.SVMSGD {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.StatModel {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace ml {
+      class org.opencv.ml.TrainData {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace objdetect {
+      class org.opencv.objdetect.BaseCascadeClassifier {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace objdetect {
+      class org.opencv.objdetect.CascadeClassifier {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace objdetect {
+      class org.opencv.objdetect.HOGDescriptor {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace objdetect {
+      class org.opencv.objdetect.Objdetect {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace objdetect {
+      class org.opencv.objdetect.QRCodeDetector {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace osgi {
+      interface org.opencv.osgi.OpenCVInterface {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace osgi {
+      class org.opencv.osgi.OpenCVNativeLoader {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.AlignExposures {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.AlignMTB {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.CalibrateCRF {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.CalibrateDebevec {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.CalibrateRobertson {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.MergeDebevec {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.MergeExposures {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.MergeMertens {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.MergeRobertson {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.Photo {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.Tonemap {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.TonemapDrago {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.TonemapMantiuk {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace photo {
+      class org.opencv.photo.TonemapReinhard {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace utils {
+      class org.opencv.utils.Converters {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractor {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractorKNN {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractorMOG2 {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.DISOpticalFlow {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.DenseOpticalFlow {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.FarnebackOpticalFlow {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.KalmanFilter {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.SparseOpticalFlow {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.SparsePyrLKOpticalFlow {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.VariationalRefinement {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.Video {
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      namespace o {
+        class org.opencv.videoio.VideoCapture {
+        }
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      namespace o {
+        class org.opencv.videoio.VideoWriter {
+        }
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      namespace o {
+        class org.opencv.videoio.Videoio {
+        }
+      }
+    }
+  }
+  
+
+  org.opencv.android.AsyncServiceHelper o-- org.opencv.engine.OpenCVEngineInterface : mEngineService
+  org.opencv.android.AsyncServiceHelper o-- org.opencv.android.LoaderCallbackInterface : mUserAppCallback
+  org.opencv.android.BaseLoaderCallback .up.|> org.opencv.android.LoaderCallbackInterface
+  org.opencv.android.Camera2Renderer -up-|> org.opencv.android.CameraGLRendererBase
+  org.opencv.android.CameraActivity -up-|> android.app.Activity
+  org.opencv.android.CameraBridgeViewBase .up.|> android.view.SurfaceHolder.Callback
+  org.opencv.android.CameraBridgeViewBase -up-|> android.view.SurfaceView
+  org.opencv.android.CameraBridgeViewBase o-- org.opencv.android.FpsMeter : mFpsMeter
+  org.opencv.android.CameraBridgeViewBase o-- org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2 : mListener
+  org.opencv.android.CameraGLRendererBase .up.|> android.graphics.SurfaceTexture.OnFrameAvailableListener
+  org.opencv.android.CameraGLRendererBase .up.|> android.opengl.GLSurfaceView.Renderer
+  org.opencv.android.CameraGLRendererBase o-- org.opencv.android.CameraGLSurfaceView : mView
+  org.opencv.android.CameraGLSurfaceView -up-|> android.opengl.GLSurfaceView
+  org.opencv.android.CameraGLSurfaceView o-- org.opencv.android.CameraGLRendererBase : mRenderer
+  org.opencv.android.CameraGLSurfaceView o-- org.opencv.android.CameraGLSurfaceView.CameraTextureListener : mTexListener
+  org.opencv.android.CameraRenderer -up-|> org.opencv.android.CameraGLRendererBase
+  org.opencv.android.JavaCamera2View -up-|> org.opencv.android.CameraBridgeViewBase
+  org.opencv.android.JavaCameraView .up.|> android.hardware.Camera.PreviewCallback
+  org.opencv.android.JavaCameraView -up-|> org.opencv.android.CameraBridgeViewBase
+  org.opencv.calib3d.StereoBM -up-|> org.opencv.calib3d.StereoMatcher
+  org.opencv.calib3d.StereoMatcher -up-|> org.opencv.core.Algorithm
+  org.opencv.calib3d.StereoSGBM -up-|> org.opencv.calib3d.StereoMatcher
+  org.opencv.core.KeyPoint o-- org.opencv.core.Point : pt
+  org.opencv.core.MatOfByte -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfDMatch -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfDouble -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfFloat -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfFloat4 -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfFloat6 -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfInt -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfInt4 -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfKeyPoint -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfPoint -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfPoint2f -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfPoint3 -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfPoint3f -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfRect -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfRect2d -up-|> org.opencv.core.Mat
+  org.opencv.core.MatOfRotatedRect -up-|> org.opencv.core.Mat
+  org.opencv.core.RotatedRect o-- org.opencv.core.Point : center
+  org.opencv.core.RotatedRect o-- org.opencv.core.Size : size
+  org.opencv.dnn.ClassificationModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.DetectionModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.KeypointsModel -up-|> org.opencv.dnn.Model
+  org.opencv.dnn.Layer -up-|> org.opencv.core.Algorithm
+  org.opencv.dnn.Model -up-|> org.opencv.dnn.Net
+  org.opencv.dnn.SegmentationModel -up-|> org.opencv.dnn.Model
+  org.opencv.features2d.AKAZE -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.AgastFeatureDetector -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.BFMatcher -up-|> org.opencv.features2d.DescriptorMatcher
+  org.opencv.features2d.BOWKMeansTrainer -up-|> org.opencv.features2d.BOWTrainer
+  org.opencv.features2d.BRISK -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.DescriptorMatcher -up-|> org.opencv.core.Algorithm
+  org.opencv.features2d.FastFeatureDetector -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.Feature2D -up-|> org.opencv.core.Algorithm
+  org.opencv.features2d.FlannBasedMatcher -up-|> org.opencv.features2d.DescriptorMatcher
+  org.opencv.features2d.GFTTDetector -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.KAZE -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.MSER -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.ORB -up-|> org.opencv.features2d.Feature2D
+  org.opencv.features2d.SimpleBlobDetector -up-|> org.opencv.features2d.Feature2D
+  org.opencv.imgproc.CLAHE -up-|> org.opencv.core.Algorithm
+  org.opencv.imgproc.GeneralizedHough -up-|> org.opencv.core.Algorithm
+  org.opencv.imgproc.GeneralizedHoughBallard -up-|> org.opencv.imgproc.GeneralizedHough
+  org.opencv.imgproc.GeneralizedHoughGuil -up-|> org.opencv.imgproc.GeneralizedHough
+  org.opencv.imgproc.LineSegmentDetector -up-|> org.opencv.core.Algorithm
+  org.opencv.ml.ANN_MLP -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.Boost -up-|> org.opencv.ml.DTrees
+  org.opencv.ml.DTrees -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.EM -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.KNearest -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.LogisticRegression -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.NormalBayesClassifier -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.RTrees -up-|> org.opencv.ml.DTrees
+  org.opencv.ml.SVM -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.SVMSGD -up-|> org.opencv.ml.StatModel
+  org.opencv.ml.StatModel -up-|> org.opencv.core.Algorithm
+  org.opencv.objdetect.BaseCascadeClassifier -up-|> org.opencv.core.Algorithm
+  org.opencv.osgi.OpenCVNativeLoader .up.|> org.opencv.osgi.OpenCVInterface
+  org.opencv.photo.AlignExposures -up-|> org.opencv.core.Algorithm
+  org.opencv.photo.AlignMTB -up-|> org.opencv.photo.AlignExposures
+  org.opencv.photo.CalibrateCRF -up-|> org.opencv.core.Algorithm
+  org.opencv.photo.CalibrateDebevec -up-|> org.opencv.photo.CalibrateCRF
+  org.opencv.photo.CalibrateRobertson -up-|> org.opencv.photo.CalibrateCRF
+  org.opencv.photo.MergeDebevec -up-|> org.opencv.photo.MergeExposures
+  org.opencv.photo.MergeExposures -up-|> org.opencv.core.Algorithm
+  org.opencv.photo.MergeMertens -up-|> org.opencv.photo.MergeExposures
+  org.opencv.photo.MergeRobertson -up-|> org.opencv.photo.MergeExposures
+  org.opencv.photo.Tonemap -up-|> org.opencv.core.Algorithm
+  org.opencv.photo.TonemapDrago -up-|> org.opencv.photo.Tonemap
+  org.opencv.photo.TonemapMantiuk -up-|> org.opencv.photo.Tonemap
+  org.opencv.photo.TonemapReinhard -up-|> org.opencv.photo.Tonemap
+  org.opencv.video.BackgroundSubtractor -up-|> org.opencv.core.Algorithm
+  org.opencv.video.BackgroundSubtractorKNN -up-|> org.opencv.video.BackgroundSubtractor
+  org.opencv.video.BackgroundSubtractorMOG2 -up-|> org.opencv.video.BackgroundSubtractor
+  org.opencv.video.DISOpticalFlow -up-|> org.opencv.video.DenseOpticalFlow
+  org.opencv.video.DenseOpticalFlow -up-|> org.opencv.core.Algorithm
+  org.opencv.video.FarnebackOpticalFlow -up-|> org.opencv.video.DenseOpticalFlow
+  org.opencv.video.SparseOpticalFlow -up-|> org.opencv.core.Algorithm
+  org.opencv.video.SparsePyrLKOpticalFlow -up-|> org.opencv.video.SparseOpticalFlow
+  org.opencv.video.VariationalRefinement -up-|> org.opencv.video.DenseOpticalFlow
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,521 @@
+@startuml
+
+title __VIDEO's Class Diagram__\n
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractor {
+          {static} + __fromPtr__()
+          + apply()
+          + apply()
+          + getBackgroundImage()
+          # BackgroundSubtractor()
+          # finalize()
+          {static} - apply_0()
+          {static} - apply_1()
+          {static} - delete()
+          {static} - getBackgroundImage_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractorKNN {
+          {static} + __fromPtr__()
+          + getDetectShadows()
+          + getDist2Threshold()
+          + getHistory()
+          + getNSamples()
+          + getShadowThreshold()
+          + getShadowValue()
+          + getkNNSamples()
+          + setDetectShadows()
+          + setDist2Threshold()
+          + setHistory()
+          + setNSamples()
+          + setShadowThreshold()
+          + setShadowValue()
+          + setkNNSamples()
+          # BackgroundSubtractorKNN()
+          # finalize()
+          {static} - delete()
+          {static} - getDetectShadows_0()
+          {static} - getDist2Threshold_0()
+          {static} - getHistory_0()
+          {static} - getNSamples_0()
+          {static} - getShadowThreshold_0()
+          {static} - getShadowValue_0()
+          {static} - getkNNSamples_0()
+          {static} - setDetectShadows_0()
+          {static} - setDist2Threshold_0()
+          {static} - setHistory_0()
+          {static} - setNSamples_0()
+          {static} - setShadowThreshold_0()
+          {static} - setShadowValue_0()
+          {static} - setkNNSamples_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.BackgroundSubtractorMOG2 {
+          {static} + __fromPtr__()
+          + apply()
+          + apply()
+          + getBackgroundRatio()
+          + getComplexityReductionThreshold()
+          + getDetectShadows()
+          + getHistory()
+          + getNMixtures()
+          + getShadowThreshold()
+          + getShadowValue()
+          + getVarInit()
+          + getVarMax()
+          + getVarMin()
+          + getVarThreshold()
+          + getVarThresholdGen()
+          + setBackgroundRatio()
+          + setComplexityReductionThreshold()
+          + setDetectShadows()
+          + setHistory()
+          + setNMixtures()
+          + setShadowThreshold()
+          + setShadowValue()
+          + setVarInit()
+          + setVarMax()
+          + setVarMin()
+          + setVarThreshold()
+          + setVarThresholdGen()
+          # BackgroundSubtractorMOG2()
+          # finalize()
+          {static} - apply_0()
+          {static} - apply_1()
+          {static} - delete()
+          {static} - getBackgroundRatio_0()
+          {static} - getComplexityReductionThreshold_0()
+          {static} - getDetectShadows_0()
+          {static} - getHistory_0()
+          {static} - getNMixtures_0()
+          {static} - getShadowThreshold_0()
+          {static} - getShadowValue_0()
+          {static} - getVarInit_0()
+          {static} - getVarMax_0()
+          {static} - getVarMin_0()
+          {static} - getVarThresholdGen_0()
+          {static} - getVarThreshold_0()
+          {static} - setBackgroundRatio_0()
+          {static} - setComplexityReductionThreshold_0()
+          {static} - setDetectShadows_0()
+          {static} - setHistory_0()
+          {static} - setNMixtures_0()
+          {static} - setShadowThreshold_0()
+          {static} - setShadowValue_0()
+          {static} - setVarInit_0()
+          {static} - setVarMax_0()
+          {static} - setVarMin_0()
+          {static} - setVarThresholdGen_0()
+          {static} - setVarThreshold_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.DISOpticalFlow {
+          {static} + PRESET_FAST : int
+          {static} + PRESET_MEDIUM : int
+          {static} + PRESET_ULTRAFAST : int
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          + getFinestScale()
+          + getGradientDescentIterations()
+          + getPatchSize()
+          + getPatchStride()
+          + getUseMeanNormalization()
+          + getUseSpatialPropagation()
+          + getVariationalRefinementAlpha()
+          + getVariationalRefinementDelta()
+          + getVariationalRefinementGamma()
+          + getVariationalRefinementIterations()
+          + setFinestScale()
+          + setGradientDescentIterations()
+          + setPatchSize()
+          + setPatchStride()
+          + setUseMeanNormalization()
+          + setUseSpatialPropagation()
+          + setVariationalRefinementAlpha()
+          + setVariationalRefinementDelta()
+          + setVariationalRefinementGamma()
+          + setVariationalRefinementIterations()
+          # DISOpticalFlow()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - delete()
+          {static} - getFinestScale_0()
+          {static} - getGradientDescentIterations_0()
+          {static} - getPatchSize_0()
+          {static} - getPatchStride_0()
+          {static} - getUseMeanNormalization_0()
+          {static} - getUseSpatialPropagation_0()
+          {static} - getVariationalRefinementAlpha_0()
+          {static} - getVariationalRefinementDelta_0()
+          {static} - getVariationalRefinementGamma_0()
+          {static} - getVariationalRefinementIterations_0()
+          {static} - setFinestScale_0()
+          {static} - setGradientDescentIterations_0()
+          {static} - setPatchSize_0()
+          {static} - setPatchStride_0()
+          {static} - setUseMeanNormalization_0()
+          {static} - setUseSpatialPropagation_0()
+          {static} - setVariationalRefinementAlpha_0()
+          {static} - setVariationalRefinementDelta_0()
+          {static} - setVariationalRefinementGamma_0()
+          {static} - setVariationalRefinementIterations_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.DenseOpticalFlow {
+          {static} + __fromPtr__()
+          + calc()
+          + collectGarbage()
+          # DenseOpticalFlow()
+          # finalize()
+          {static} - calc_0()
+          {static} - collectGarbage_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.FarnebackOpticalFlow {
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + getFastPyramids()
+          + getFlags()
+          + getNumIters()
+          + getNumLevels()
+          + getPolyN()
+          + getPolySigma()
+          + getPyrScale()
+          + getWinSize()
+          + setFastPyramids()
+          + setFlags()
+          + setNumIters()
+          + setNumLevels()
+          + setPolyN()
+          + setPolySigma()
+          + setPyrScale()
+          + setWinSize()
+          # FarnebackOpticalFlow()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_2()
+          {static} - create_3()
+          {static} - create_4()
+          {static} - create_5()
+          {static} - create_6()
+          {static} - create_7()
+          {static} - create_8()
+          {static} - delete()
+          {static} - getFastPyramids_0()
+          {static} - getFlags_0()
+          {static} - getNumIters_0()
+          {static} - getNumLevels_0()
+          {static} - getPolyN_0()
+          {static} - getPolySigma_0()
+          {static} - getPyrScale_0()
+          {static} - getWinSize_0()
+          {static} - setFastPyramids_0()
+          {static} - setFlags_0()
+          {static} - setNumIters_0()
+          {static} - setNumLevels_0()
+          {static} - setPolyN_0()
+          {static} - setPolySigma_0()
+          {static} - setPyrScale_0()
+          {static} - setWinSize_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.KalmanFilter {
+          # nativeObj : long
+          + KalmanFilter()
+          + KalmanFilter()
+          + KalmanFilter()
+          + KalmanFilter()
+          {static} + __fromPtr__()
+          + correct()
+          + getNativeObjAddr()
+          + get_controlMatrix()
+          + get_errorCovPost()
+          + get_errorCovPre()
+          + get_gain()
+          + get_measurementMatrix()
+          + get_measurementNoiseCov()
+          + get_processNoiseCov()
+          + get_statePost()
+          + get_statePre()
+          + get_transitionMatrix()
+          + predict()
+          + predict()
+          + set_controlMatrix()
+          + set_errorCovPost()
+          + set_errorCovPre()
+          + set_gain()
+          + set_measurementMatrix()
+          + set_measurementNoiseCov()
+          + set_processNoiseCov()
+          + set_statePost()
+          + set_statePre()
+          + set_transitionMatrix()
+          # KalmanFilter()
+          # finalize()
+          {static} - KalmanFilter_0()
+          {static} - KalmanFilter_1()
+          {static} - KalmanFilter_2()
+          {static} - KalmanFilter_3()
+          {static} - correct_0()
+          {static} - delete()
+          {static} - get_controlMatrix_0()
+          {static} - get_errorCovPost_0()
+          {static} - get_errorCovPre_0()
+          {static} - get_gain_0()
+          {static} - get_measurementMatrix_0()
+          {static} - get_measurementNoiseCov_0()
+          {static} - get_processNoiseCov_0()
+          {static} - get_statePost_0()
+          {static} - get_statePre_0()
+          {static} - get_transitionMatrix_0()
+          {static} - predict_0()
+          {static} - predict_1()
+          {static} - set_controlMatrix_0()
+          {static} - set_errorCovPost_0()
+          {static} - set_errorCovPre_0()
+          {static} - set_gain_0()
+          {static} - set_measurementMatrix_0()
+          {static} - set_measurementNoiseCov_0()
+          {static} - set_processNoiseCov_0()
+          {static} - set_statePost_0()
+          {static} - set_statePre_0()
+          {static} - set_transitionMatrix_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.SparseOpticalFlow {
+          {static} + __fromPtr__()
+          + calc()
+          + calc()
+          # SparseOpticalFlow()
+          # finalize()
+          {static} - calc_0()
+          {static} - calc_1()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.SparsePyrLKOpticalFlow {
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + getFlags()
+          + getMaxLevel()
+          + getMinEigThreshold()
+          + getTermCriteria()
+          + getWinSize()
+          + setFlags()
+          + setMaxLevel()
+          + setMinEigThreshold()
+          + setTermCriteria()
+          + setWinSize()
+          # SparsePyrLKOpticalFlow()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_2()
+          {static} - create_3()
+          {static} - create_4()
+          {static} - create_5()
+          {static} - delete()
+          {static} - getFlags_0()
+          {static} - getMaxLevel_0()
+          {static} - getMinEigThreshold_0()
+          {static} - getTermCriteria_0()
+          {static} - getWinSize_0()
+          {static} - setFlags_0()
+          {static} - setMaxLevel_0()
+          {static} - setMinEigThreshold_0()
+          {static} - setTermCriteria_0()
+          {static} - setWinSize_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.VariationalRefinement {
+          {static} + __fromPtr__()
+          + calcUV()
+          {static} + create()
+          + getAlpha()
+          + getDelta()
+          + getFixedPointIterations()
+          + getGamma()
+          + getOmega()
+          + getSorIterations()
+          + setAlpha()
+          + setDelta()
+          + setFixedPointIterations()
+          + setGamma()
+          + setOmega()
+          + setSorIterations()
+          # VariationalRefinement()
+          # finalize()
+          {static} - calcUV_0()
+          {static} - create_0()
+          {static} - delete()
+          {static} - getAlpha_0()
+          {static} - getDelta_0()
+          {static} - getFixedPointIterations_0()
+          {static} - getGamma_0()
+          {static} - getOmega_0()
+          {static} - getSorIterations_0()
+          {static} - setAlpha_0()
+          {static} - setDelta_0()
+          {static} - setFixedPointIterations_0()
+          {static} - setGamma_0()
+          {static} - setOmega_0()
+          {static} - setSorIterations_0()
+      }
+    }
+  }
+  
+
+  namespace org.opencv {
+    namespace video {
+      class org.opencv.video.Video {
+          {static} + MOTION_AFFINE : int
+          {static} + MOTION_EUCLIDEAN : int
+          {static} + MOTION_HOMOGRAPHY : int
+          {static} + MOTION_TRANSLATION : int
+          {static} + OPTFLOW_FARNEBACK_GAUSSIAN : int
+          {static} + OPTFLOW_LK_GET_MIN_EIGENVALS : int
+          {static} + OPTFLOW_USE_INITIAL_FLOW : int
+          {static} - CV_LKFLOW_GET_MIN_EIGENVALS : int
+          {static} - CV_LKFLOW_INITIAL_GUESSES : int
+          {static} + CamShift()
+          {static} + buildOpticalFlowPyramid()
+          {static} + buildOpticalFlowPyramid()
+          {static} + buildOpticalFlowPyramid()
+          {static} + buildOpticalFlowPyramid()
+          {static} + buildOpticalFlowPyramid()
+          {static} + calcOpticalFlowFarneback()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + calcOpticalFlowPyrLK()
+          {static} + computeECC()
+          {static} + computeECC()
+          {static} + createBackgroundSubtractorKNN()
+          {static} + createBackgroundSubtractorKNN()
+          {static} + createBackgroundSubtractorKNN()
+          {static} + createBackgroundSubtractorKNN()
+          {static} + createBackgroundSubtractorMOG2()
+          {static} + createBackgroundSubtractorMOG2()
+          {static} + createBackgroundSubtractorMOG2()
+          {static} + createBackgroundSubtractorMOG2()
+          {static} + findTransformECC()
+          {static} + meanShift()
+          {static} + readOpticalFlow()
+          {static} + writeOpticalFlow()
+          {static} - CamShift_0()
+          {static} - buildOpticalFlowPyramid_0()
+          {static} - buildOpticalFlowPyramid_1()
+          {static} - buildOpticalFlowPyramid_2()
+          {static} - buildOpticalFlowPyramid_3()
+          {static} - buildOpticalFlowPyramid_4()
+          {static} - calcOpticalFlowFarneback_0()
+          {static} - calcOpticalFlowPyrLK_0()
+          {static} - calcOpticalFlowPyrLK_1()
+          {static} - calcOpticalFlowPyrLK_2()
+          {static} - calcOpticalFlowPyrLK_3()
+          {static} - calcOpticalFlowPyrLK_4()
+          {static} - calcOpticalFlowPyrLK_5()
+          {static} - computeECC_0()
+          {static} - computeECC_1()
+          {static} - createBackgroundSubtractorKNN_0()
+          {static} - createBackgroundSubtractorKNN_1()
+          {static} - createBackgroundSubtractorKNN_2()
+          {static} - createBackgroundSubtractorKNN_3()
+          {static} - createBackgroundSubtractorMOG2_0()
+          {static} - createBackgroundSubtractorMOG2_1()
+          {static} - createBackgroundSubtractorMOG2_2()
+          {static} - createBackgroundSubtractorMOG2_3()
+          {static} - findTransformECC_0()
+          {static} - meanShift_0()
+          {static} - readOpticalFlow_0()
+          {static} - writeOpticalFlow_0()
+      }
+    }
+  }
+  
+
+  org.opencv.video.BackgroundSubtractor -up-|> org.opencv.core.Algorithm
+  org.opencv.video.BackgroundSubtractorKNN -up-|> org.opencv.video.BackgroundSubtractor
+  org.opencv.video.BackgroundSubtractorMOG2 -up-|> org.opencv.video.BackgroundSubtractor
+  org.opencv.video.DISOpticalFlow -up-|> org.opencv.video.DenseOpticalFlow
+  org.opencv.video.DenseOpticalFlow -up-|> org.opencv.core.Algorithm
+  org.opencv.video.FarnebackOpticalFlow -up-|> org.opencv.video.DenseOpticalFlow
+  org.opencv.video.SparseOpticalFlow -up-|> org.opencv.core.Algorithm
+  org.opencv.video.SparsePyrLKOpticalFlow -up-|> org.opencv.video.SparseOpticalFlow
+  org.opencv.video.VariationalRefinement -up-|> org.opencv.video.DenseOpticalFlow
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

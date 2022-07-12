@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/dialog_bottomsheet_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/header_radius">
+
+        <ImageView
+            android:id="@+id/dialog_bottomsheet_iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/close_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dialog_bottomsheet_iv_close"
+            android:text="选择模型"
+            android:textColor="@color/model_bottomdialog_title_textcolor"
+            android:textSize="@dimen/model_bottomdialog_title_textSize" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/model_bottom_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/BN0_model_textview"
+            android:text="BN0"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="@dimen/model_bottomdialog_list_textSzie"
+            android:textColor="@drawable/model_bottomdialog_selector"/>
+        <TextView
+            android:id="@+id/BNLF_model_textview"
+            android:text="BNLF"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="@dimen/model_bottomdialog_list_textSzie"
+            android:textColor="@drawable/model_bottomdialog_selector"/>
+    </LinearLayout>
+
+
+</LinearLayout>
