@@ -1,0 +1,79 @@
+from flask import Flask, render_template, jsonify, request, make_response, send_from_directory, abort
+import time
+import os,sys
+import base64
+import utils
+from utils import video_to_frames
+root_folder=os.path.dirname(__file__)
+sys.path.append(root_folder)
+# 保存上传的视频的文件夹
+UPLOAD_FOLDER=os.path.join(root_folder,"upload")
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+#保存提取的视频帧文件夹
+SRC_FRAMES_FOLDER=os.path.join(root_folder,"src_frames")
+if not os.path.exists(SRC_FRAMES_FOLDER):
+    os.makedirs(SRC_FRAMES_FOLDER)
+app=Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['SRC_FRAMES_FOLDER'] = SRC_FRAMES_FOLDER
+current_frames_folder=None
+basedir = os.path.abspath(os.path.dirname(__file__))
+ALLOWED_EXTENSIONS = set(['txt', 'png', 'jpg', 'xls', 'JPG', 'PNG', 'xlsx', 'gif', 'GIF','mp4'])
+
+# 用于判断文件后缀
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
+
+# 连接测试
+@app.route('/vos/test')
+def connect_test():
+    return "Welcome to VOS api!"
+
+# 上传文件
+@app.route('/vos/upload', methods=['POST'], strict_slashes=False)
+def api_upload():
+    file_dir = os.path.join(app.config['UPLOAD_FOLDER'],"video")
+    if not os.path.exists(file_dir):
+        os.makedirs(file_dir)
+    f = request.files['myfile']  # 从表单的file字段获取文件，myfile为该表单的name值
+    if f and allowed_file(f.filename):  # 判断是否是允许上传的文件类型
+        fname = f.filename
+        print("fname:{}".format(fname))
+        ext = fname.rsplit('.', 1)[1]  # 获取文件后缀
+        unix_time = int(time.time())
+        new_filename = str(unix_time) + '.' + ext  # 修改了上传的文件名
+        f.save(os.path.join(file_dir, new_filename))  # 保存文件到upload目录
+        video_path=os.path.join(file_dir, new_filename)
+        print("new_filename:{}".format(new_filename))
+        #new_filename_byte=bytes(new_filename,encoding='utf-8')
+        #new_filename_byte=str.encode(new_filename)
+        #token = base64.b64encode(new_filename_byte)
+        #print("token:")
+        #print(token)
+        video_name=fname.split('.')[0]
+        unix_time_str=str(unix_time)
+        result_path = os.path.join(app.config['SRC_FRAMES_FOLDER'],unix_time_str)
+        current_frames_folder = result_path
+        piclength=video_to_frames(video_name,video_path,result_path)
+        
+        return jsonify([{"errno": 0, "errmsg": "upload sucess","filedir":unix_time_str,"piclength":piclength,"videoname":video_name}])
+
+    else:
+        return jsonify([{"errno": 1001, "errmsg": "upload failed","filedir":unix_time_str,"piclength":piclength,"videoname":video_name}])
+    
+# 获取加载图片
+@app.route("/vos/download/<filedir>/<filename>")
+def download(filedir,filename):
+    #if request.method == "GET":
+    pic_folder=os.path.join(app.config['SRC_FRAMES_FOLDER'],filedir)
+    if os.path.isfile(os.path.join(pic_folder, filename)):
+        return send_from_directory(pic_folder, filename, as_attachment=True)
+    else:
+        #abort(404)立即停止视图函数的执行，并且把相对应的信息返回到前端中
+        return "404"
+
+if __name__ == '__main__':
+    #app.run(host="120.26.176.20",port="5001",debug=True)
+    app.run(host="0.0.0.0",port="5000",debug=True)

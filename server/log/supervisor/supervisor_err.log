@@ -1,0 +1,134 @@
+
+
+[2020-04-09 10:00:45 +0800] [32681] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:00:45 +0800] [32681] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:45 +0800] [32681] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:46 +0800] [32681] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:46 +0800] [32681] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:47 +0800] [32681] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:47 +0800] [32681] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:48 +0800] [32681] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:48 +0800] [32681] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:49 +0800] [32681] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:49 +0800] [32681] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:50 +0800] [32681] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:00:51 +0800] [32684] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:00:51 +0800] [32684] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:51 +0800] [32684] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:52 +0800] [32684] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:52 +0800] [32684] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:53 +0800] [32684] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:53 +0800] [32684] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:54 +0800] [32684] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:54 +0800] [32684] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:55 +0800] [32684] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:55 +0800] [32684] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:56 +0800] [32684] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:00:58 +0800] [32687] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:00:58 +0800] [32687] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:58 +0800] [32687] [ERROR] Retrying in 1 second.
+[2020-04-09 10:00:59 +0800] [32687] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:00:59 +0800] [32687] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:00 +0800] [32687] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:00 +0800] [32687] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:01 +0800] [32687] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:01 +0800] [32687] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:02 +0800] [32687] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:02 +0800] [32687] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:03 +0800] [32687] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:01:07 +0800] [32690] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:01:07 +0800] [32690] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:07 +0800] [32690] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:08 +0800] [32690] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:08 +0800] [32690] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:09 +0800] [32690] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:09 +0800] [32690] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:10 +0800] [32690] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:10 +0800] [32690] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:11 +0800] [32690] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:11 +0800] [32690] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:12 +0800] [32690] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:01:16 +0800] [32693] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:01:16 +0800] [32693] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:16 +0800] [32693] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:17 +0800] [32693] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:17 +0800] [32693] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:18 +0800] [32693] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:18 +0800] [32693] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:19 +0800] [32693] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:19 +0800] [32693] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:20 +0800] [32693] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:20 +0800] [32693] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:21 +0800] [32693] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:01:26 +0800] [32696] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:01:26 +0800] [32696] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:26 +0800] [32696] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:27 +0800] [32696] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:27 +0800] [32696] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:28 +0800] [32696] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:28 +0800] [32696] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:29 +0800] [32696] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:29 +0800] [32696] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:30 +0800] [32696] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:30 +0800] [32696] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:31 +0800] [32696] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:01:37 +0800] [32699] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:01:37 +0800] [32699] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:37 +0800] [32699] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:38 +0800] [32699] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:38 +0800] [32699] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:39 +0800] [32699] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:39 +0800] [32699] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:40 +0800] [32699] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:40 +0800] [32699] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:41 +0800] [32699] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:41 +0800] [32699] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:42 +0800] [32699] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:01:50 +0800] [32702] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:01:50 +0800] [32702] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:50 +0800] [32702] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:51 +0800] [32702] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:51 +0800] [32702] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:52 +0800] [32702] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:52 +0800] [32702] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:53 +0800] [32702] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:53 +0800] [32702] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:54 +0800] [32702] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:01:54 +0800] [32702] [ERROR] Retrying in 1 second.
+[2020-04-09 10:01:55 +0800] [32702] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:02:03 +0800] [32705] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:02:03 +0800] [32705] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:03 +0800] [32705] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:04 +0800] [32705] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:04 +0800] [32705] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:05 +0800] [32705] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:05 +0800] [32705] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:06 +0800] [32705] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:06 +0800] [32705] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:07 +0800] [32705] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:07 +0800] [32705] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:08 +0800] [32705] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:02:17 +0800] [32708] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:02:17 +0800] [32708] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:17 +0800] [32708] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:18 +0800] [32708] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:18 +0800] [32708] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:19 +0800] [32708] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:19 +0800] [32708] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:20 +0800] [32708] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:20 +0800] [32708] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:21 +0800] [32708] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:21 +0800] [32708] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:22 +0800] [32708] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2020-04-09 10:02:33 +0800] [32714] [INFO] Starting gunicorn 20.0.4
+[2020-04-09 10:02:33 +0800] [32714] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:33 +0800] [32714] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:34 +0800] [32714] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:34 +0800] [32714] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:35 +0800] [32714] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:35 +0800] [32714] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:36 +0800] [32714] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:36 +0800] [32714] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:37 +0800] [32714] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2020-04-09 10:02:37 +0800] [32714] [ERROR] Retrying in 1 second.
+[2020-04-09 10:02:38 +0800] [32714] [ERROR] Can't connect to ('0.0.0.0', 5000)
